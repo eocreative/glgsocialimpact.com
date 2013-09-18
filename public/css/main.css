@@ -2,6 +2,14 @@
 red:f5061d
 */
 
+body {
+	background: black;
+}
+
+.main {
+	background: white;
+}
+
 a:hover, a:focus {
 	color: white;
 	text-decoration: none;
@@ -28,6 +36,10 @@ a.btn-primary:hover {
 	margin-left: 10px;
 }
 
+.navbar-text {
+	margin-right: 15px;
+}
+
 .navbar-brand {
 	font-size: 26px;
 }
@@ -37,17 +49,27 @@ a.btn-primary:hover {
 }
 
 .jumbotron {
+font-size: 18px;
+}
+
+.jumbotron {
 	margin-bottom: 0;
 	background: none;
+}
+.jumbo-first{
+	padding-top: 20px;
 }
 
 .jumbo-primary{
 	text-align: center;
-	padding-top: 20px;
 }
 
 .jumbotron.dark{
 	background: #f2f2f2;
+}
+
+.glg-network img{
+	max-width: 100%;
 }
 
 .btn-primary {
@@ -58,8 +80,56 @@ a.btn-primary:hover {
 	border-bottom: solid 4px #d7d7d7;
 }
 
+.btn-primary.red {
+	color: white;
+	background: #f5061d;
+	border: none;
+	padding: 20px 60px;
+}
+
+.btn-primary.red:hover {
+	border: none;
+	background: #E9091E;
+}
+
 .quotes {
 	text-align: center;
+}
+
+.arrow-wrapper img {
+}
+
+.arrow-wrapper {
+	float: left;
+	height: 60px;
+	margin-right: 15px;
+	margin-top: -8px;
+}
+
+.callout {
+	padding-top: 20px;
+	text-align: center;
+}
+
+.how-wrapper {
+	margin-top: 20px;
+}
+
+.icon-cluster {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+.icon-cluster p {
+	margin-bottom: 15px;
+	padding-left: 32px;
+}
+
+.icon-points {
+	margin-right: 10px;
+}
+
+ul ul, ol ul {
+list-style-type: none;
 }
 
 footer {
@@ -72,4 +142,9 @@ footer a{
 }
 footer h4 {
 	margin-top: 17px;
+}
+
+.container > .navbar-header, .container > .navbar-collapse {
+float: none;
+display: block;
 }
