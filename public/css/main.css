@@ -10,6 +10,17 @@ body {
 	background: white;
 }
 
+.email a{
+	color: black;
+	font-weight: bold;
+}
+
+.email a:hover{
+	color: black;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
 a:hover, a:focus {
 	color: white;
 	text-decoration: none;
@@ -126,6 +137,34 @@ font-size: 18px;
 
 .icon-points {
 	margin-right: 10px;
+}
+.partners {
+	text-align: left;
+	margin-top: 40px;
+}
+
+.partners .row {
+	margin-bottom: 20px;
+}
+
+.col-md-3:first-of-type{
+	text-align: center;
+}
+
+footer .container {
+	margin-top: 10px;
+}
+
+footer .pull-right {
+	padding-top: 8px;
+}
+
+footer .pull-right a{
+	margin-left: 12px;
+}
+
+.logo-bottom {
+	font-size: 21px;
 }
 
 ul ul, ol ul {
