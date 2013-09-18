@@ -10,6 +10,10 @@ body {
 	background: white;
 }
 
+h4 {
+	line-height: 28px;
+}
+
 .email a{
 	color: black;
 	font-weight: bold;
@@ -19,6 +23,10 @@ body {
 	color: black;
 	font-weight: bold;
 	text-decoration: underline;
+}
+
+.quotes ul {
+	margin-left: -38px;
 }
 
 a:hover, a:focus {
@@ -103,8 +111,29 @@ font-size: 18px;
 	background: #E9091E;
 }
 
-.quotes {
+.quotes h3 {
+	margin-bottom: 30px;
 	text-align: center;
+}
+
+.quotes ul {
+	background: #f2f2f2;
+}
+
+.quotes li {
+	padding: 8px;
+} 
+
+.quotes li p {
+	margin-top: 5px;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 16px;
+}
+
+blockquote {
+	border: none;
+	line-height: 22px;
 }
 
 .arrow-wrapper img {
@@ -137,6 +166,8 @@ font-size: 18px;
 
 .icon-points {
 	margin-right: 10px;
+	float: left;
+	height: 40px;
 }
 .partners {
 	text-align: left;
