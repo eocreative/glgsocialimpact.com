@@ -214,6 +214,14 @@ footer h4 {
 	margin-top: 17px;
 }
 
+
+
+@media screen and (min-width: 1200px) {
+  .adjust {
+	margin-top: 25px;
+	}
+}
+
 .container > .navbar-header, .container > .navbar-collapse {
 float: none;
 display: block;
