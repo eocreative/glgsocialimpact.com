@@ -83,6 +83,10 @@ font-size: 18px;
 	text-align: center;
 }
 
+.jumbo-primary .row p{
+	text-align: left;
+}
+
 .jumbotron.dark{
 	background: #f2f2f2;
 }
