@@ -1,1 +1,4 @@
 #List your needed gems here, one per line
+sinatra
+sinatra-contrib
+json
