@@ -16,6 +16,12 @@ http {
     access_log /dev/stdout;
     #all the services exposed by haproxy here
     keepalive_timeout 65;
+    {{#services}}
+    upstream front_{{port}} {
+        server 127.0.0.1:{{port}};
+    }
+    {{/services}}
+
     proxy_read_timeout 200;
     sendfile off;
     tcp_nopush on;
@@ -32,11 +38,24 @@ http {
 
     #and here are the proxies
     {{#services}}
+    
     server {
         listen {{proxy_port}};
         location / {
 		root {{directory}}/public;
 		index index.html;
+        }
+
+        location /api {
+            proxy_pass_header Server;
+            proxy_set_header Host $http_host;
+            proxy_redirect off;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Scheme $scheme;
+            proxy_set_header X-Forwarded-Host $host;
+            proxy_set_header X-Forwarded-Server $host;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_pass http://front_{{port}};
         }
     }
     {{/services}}

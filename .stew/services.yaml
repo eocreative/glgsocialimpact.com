@@ -4,16 +4,17 @@
 #and with failover
 services:
   -
+    port: 9000
     #having a proxy port hooks up nginx
     proxy_port: 9090
+
     #files ending in the following space separated patterns
     reload_on_changes:
-#      - rb
-#you can also just put in long running programs, background jobs that don't
-#serve a port to provide a service, but do local processing, things like
-#watchr or redis
-#programs:
-#  -
-#    name: <<just a string>>
-#    exec: <<command line relative to your root>>
-#and file event notification autocompilation support
+      - rb
+    programs:
+      -
+        port: 9001
+        exec: ./api/glgimpact.rb 9001
+      -
+        port: 9002
+        exec: ./api/glgimpact.rb 9002
