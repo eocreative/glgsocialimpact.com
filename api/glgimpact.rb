@@ -10,10 +10,12 @@ unless File.respond_to? :realpath
   end
 end
 
+$: << File.expand_path(File.dirname(File.realpath(__FILE__)))
 require 'sinatra'
 require 'rubygems'
 require 'json'
 require 'logger'
+require 'lib/helpers'
 require 'net/smtp'
 # require 'mustache'
 
@@ -39,7 +41,7 @@ configure do
     # sets root as the parent-directory of the current file
     set :root, File.join(File.dirname(__FILE__), '..')
     # sets the view directory correctly
-    set :views, Proc.new { File.join(root, "templates/views") } 
+    # set :views, Proc.new { File.join(root, "templates/views") } 
     set :public_folder, Proc.new { File.join(root, "public") }
 end
 
@@ -52,33 +54,7 @@ before do
   @logfile = File.open("#{@home}/var/log/glgimpact-api.log", File::WRONLY | File::APPEND | File::CREAT)
   @log = Logger.new(@logfile, 10, 1024000)
   @log.level = ENV['GLGENV'] == 'PRD' ? Logger::INFO : Logger::DEBUG 
-  def send_email(opts={})
-    opts[:server]      ||= 'localhost'
-    opts[:from]        ||= 'noreply@glgroup.com'
-    opts[:to]          ||= ENV['GLGIMPACT_EMAIL_CONTACT'] || 'falleyne@glgroup.com'
-    opts[:from_alias]  ||= 'GLGimpact.com Application'
-    opts[:subject]     ||= "GLGimpact.com Application Submission"
-    opts[:body]        ||= "Error processing the body of the message."
-
-    msg = <<END_OF_MESSAGE
-From: #{opts[:from_alias]} <#{opts[:from]}>
-To: <#{opts[:to]}>
-Subject: #{opts[:subject]}
-MIME-Version: 1.0
-Content-type: text/html
-A message from the website:
-\n\r
-Name: #{opts[:ContactFrom]}
-Email: #{opts[:ContactEmail]}
-\n\r
-Comments:
-#{opts[:body]}
-END_OF_MESSAGE
-
-    Net::SMTP.start(opts[:server]) do |smtp|
-      smtp.send_message msg, opts[:from], opts[:to]
-    end
-  end #send_email
+ 
 
   #content_type :json 
   #setting response headers to handle CORS
@@ -91,19 +67,21 @@ end #before
 
 
 post '/api/contact' do
-  @log.info 'Params received: ' + params.to_json
-  begin
-    opts = {
-      :form => params[:form] 
-    }
-    
 
+  begin
+    @log.debug 'Params received: ' + params.to_json
+    @log.debug request.env.to_json
+    template = render_file('application_email.mustache', params)
+    @log.verbose template
+    opts = {
+      :body => template
+    }
     send_email(opts)
   rescue Exception=>e
-    return "Error"
+    return [500]
     @log.error e
   ensure
-   return "success"
+    redirect "#{request.env['HTTP_X_SCHEME']}://#{request.env['HTTP_HOST']}/application-submit.html?status=success"
   end
 
 end
@@ -113,7 +91,8 @@ end
 __END__
 
 
-
+@@reply
+This is the api for GLGImpact.
 
 @@home
 healthy
