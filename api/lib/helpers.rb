@@ -6,7 +6,7 @@ def send_email(opts={})
   # @log.debug opts.to_json
     opts[:server]      ||= 'localhost'
     opts[:from]        ||= 'noreply@glgroup.com'
-    opts[:to]          ||= 'falleyne@glgroup.com'
+    opts[:to]          ||= ENV['GLGIMPACT_EMAIL_CONTACT'] || 'falleyne@glgroup.com'
     opts[:from_alias]  ||= 'GLGimpact.com Application'
     opts[:subject]     ||= "GLGimpact.com Application Submission"
     opts[:body]        ||= "Error processing the body of the message."
