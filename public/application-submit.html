@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GLG Impact is an initiative that supports high-performing nonprofits and their leaders at critical growth junctures.">
+    <link rel="shortcut icon" href="ico/favicon.png">
+
+    <title>GLG Impact</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/jquery.bxslider.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="http://glgimpact.com">GLG IMPACT</a>
+            <p class="navbar-text pull-right">
+              <a href="fellows.html">FELLOWS</a>
+              <a href="partners.html">PARTNERS</a>
+            </p>
+          </div>
+        </div>
+      </nav>
+    <div class="main">
+		<div class="jumbotron jumbo-primary jumbo-first">
+	    	<div class="container">
+				<h2 class="sub-page-title">GLG Impact Fellows</h2>
+				<h2>Membership Application</h2>
+			</div>
+		</div>
+		<div class="jumbotron dark">
+	    	<div class="container">
+
+	    		<!-- Hidden, shown if form succeeds -->
+
+    			<div id="form-success" class="col-md-6">
+          			<div class="panel panel-default">
+            			<div class="panel-heading">Application Submitted</div>
+            			<div class="panel-body">Thank you, your application has been submitted to GLG.</div>
+          			</div>
+          		</div>
+	          <!-- Hidden, shown if form fails -->
+	          <div id="form-fail" class="col-md-6">
+	          	<div class="panel panel-default">
+	            	<div class="panel-heading">Application Submission Failed</div>
+	            	<div class="panel-body">Sorry, but your application failed to be submitted. We apologize for the inconvenience. Please click the back button in your browser, or click try again.</div>
+	          	</div>
+	          		<div class="callout">
+		          		<a class="btn btn-primary btn-lg red" id="try-again-button">TRY AGAIN</a>
+		        	</div>
+		    	</div>
+		        
+		        <!-- end hidden status -->
+
+	    		
+	    	</div>
+	    </div>
+    </div>
+     
+
+    <footer>
+    	<div class="container">
+    		<span class="logo-bottom"><a href="#">GLG IMPACT</a></span>
+        <p class="pull-right">
+              <a href="fellows.html">FELLOWS</a>
+              <a href="partners.html">PARTNERS</a>
+            </p>
+    	</div>
+        
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/jquery.purl.js"></script>
+    <script type="text/javascript">
+         $(document).ready(function () {          
+             $('#form-success').hide();
+             $('#form-fail').hide();
+             $("#try-again-button").click(function(event) {
+				    event.preventDefault();
+				    history.back(1);
+			 });
+             status = $.url().param('status');
+             if(status === 'success') {
+             	$('#form-success').show();
+     		 } else {
+             	$('#form-fail').show();             		
+             	}
+
+       
+      
+         });
+    </script>
+
+  </body>
+</html>
