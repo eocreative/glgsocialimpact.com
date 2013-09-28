@@ -1,1 +1,14 @@
+.DS_Store
 var/
+.autocompile.rb
+.autodeploy.rb
+.autoreload.rb
+.bootstrap.sh
+.haproxy
+.nginx.conf
+.packages
+.profile
+.schedule.rb
+.supervisord
+.vagrant
+Vagrantfile
