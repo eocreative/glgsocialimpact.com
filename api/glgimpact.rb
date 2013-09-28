@@ -72,7 +72,7 @@ post '/api/contact' do
     @log.debug 'Params received: ' + params.to_json
     # @log.debug request.env.to_json
     template = render_file('application_email.mustache', params)
-    @log.verbose template
+    # @log.debug template
     opts = {
       :body => template
     }
@@ -81,7 +81,7 @@ post '/api/contact' do
     return [500]
     @log.error e
   ensure
-    redirect "#{request.env['HTTP_X_SCHEME']}://#{request.env['HTTP_HOST']}/application-submit.html?status=success"
+    return [200]
   end
 
 end
