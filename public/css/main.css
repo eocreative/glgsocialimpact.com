@@ -79,9 +79,6 @@ font-size: 18px;
 	padding-top: 20px;
 }
 
-.jumbo-primary{
-	text-align: center;
-}
 
 .jumbo-primary .row p{
 	text-align: left;
@@ -110,10 +107,15 @@ font-size: 18px;
 	padding: 20px 60px;
 }
 
+.sub-page-title {
+	font-size: 50px;
+}
 .btn-primary.red:hover {
 	border: none;
 	background: #E9091E;
 }
+
+
 
 .quotes h3 {
 	margin-bottom: 30px;
@@ -229,4 +231,8 @@ footer h4 {
 .container > .navbar-header, .container > .navbar-collapse {
 float: none;
 display: block;
+}
+
+.panel-heading {
+	font-weight: bold;
 }
