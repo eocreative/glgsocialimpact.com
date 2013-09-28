@@ -70,7 +70,7 @@ post '/api/contact' do
 
   begin
     @log.debug 'Params received: ' + params.to_json
-    @log.debug request.env.to_json
+    # @log.debug request.env.to_json
     template = render_file('application_email.mustache', params)
     @log.verbose template
     opts = {
