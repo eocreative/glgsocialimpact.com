@@ -204,9 +204,9 @@ footer .pull-right a{
 	font-size: 21px;
 }
 
-ul ul, ol ul {
+/*ul ul, ol ul {
 list-style-type: none;
-}
+}*/
 
 footer {
 	height: 50px;
@@ -236,3 +236,8 @@ display: block;
 .panel-heading {
 	font-weight: bold;
 }
+
+.partners-contact {
+	text-align: right;
+}
+
