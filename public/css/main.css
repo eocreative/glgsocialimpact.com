@@ -238,6 +238,7 @@ list-style-type: none;
 footer {
 	height: 50px;
 	background: black;
+	color: white;
 }
 
 footer a{
