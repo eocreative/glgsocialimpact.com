@@ -40,6 +40,16 @@ line-height: 25px;
 	text-decoration: underline;
 }
 
+.link a{
+	color: black;
+	font-weight: bold;
+}
+
+.link a:hover{
+	color: black;
+	font-weight: bold;
+	text-decoration: underline;
+}
 .quotes ul {
 	margin-left: -38px;
 }
