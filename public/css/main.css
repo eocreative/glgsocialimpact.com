@@ -235,12 +235,12 @@ footer .container {
 	margin-top: 10px;
 }
 
-footer .pull-right {
-	padding-top: 8px;
+.footer-nav a {
+	padding: 5px;
 }
 
 footer .pull-right a{
-	margin-left: 12px;
+	padding: 0 12px;
 }
 
 .logo-bottom {
@@ -254,62 +254,80 @@ list-style-type: none;
 footer {
 	height: 50px;
 	background: black;
-	color: white;
+	color: #C2C2C2;
 }
 
 footer a{
-	color: white;
+	color: #C2C2C2;
 }
 footer h4 {
 	margin-top: 17px;
 }
 
 .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
-bottom: -40px !important;
+	bottom: -40px !important;
 }
 
 
 @media screen and (min-width: 1200px) {
-  .adjust {
+  	.adjust {
 	margin-top: 25px;
 	}
 }
 
 @media screen and (max-width: 650px) {
 	body {
-		padding-top: 65px;
+		padding-top: 0;
+	}
+	
+	.navbar-fixed-top, .navbar-fixed-bottom {
+		position: relative;
+		border-width: 0 0 1px;
 	}
 
 
-
-.navbar-text p{
-	overflow: hidden;
-}
+	.navbar-text p{
+		overflow: hidden;
+	}
 	.navbar-text a{
 		width: 25%;
 		display: block;
 		float: left;
 		margin: 0;
 		padding: 10px 0;
-		
 	}
 	.navbar-brand {
 		float: none !important;
 		margin-top: 5px;
 	}
-  .navbar-header {
-	text-align: center;
-	padding-top: 15px;
+
+  	.navbar-header {
+		text-align: center;
+		padding-top: 15px;
 	}
+
 	.navbar-header p{
 		width: 100%;
-	float: none !important;
+		float: none !important;
+		overflow: hidden;
+		margin: 0;
 	}
+	footer .container span {
+		float: none !important;
+		text-align: center;
+	}
+	.footer-nav {
+		text-align: center;
+		display: block;
+		margin-bottom: 10px;
+
+	}
+
 }
 
 .container > .navbar-header, .container > .navbar-collapse {
-float: none;
-display: block;
+	float: none;
+	display: block;
 }
 
 .panel-heading {
