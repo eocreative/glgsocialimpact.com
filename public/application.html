@@ -25,13 +25,15 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-inverse" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
             <a class="navbar-brand" href="http://glgimpact.com">GLG SOCIAL IMPACT</a>
             <p class="navbar-text pull-right">
               <a href="fellows.html">FELLOWS</a>
               <a href="partners.html">PARTNERS</a>
+              <a href="application.html">APPLY</a>
+              <a href="mailto:info@glgimpact.com?Subject=Contact%20Us">CONTACT</a>
             </p>
           </div>
         </div>
@@ -41,14 +43,15 @@
 	    	<div class="container">
 				<h2 class="sub-page-title">GLG Impact Fellows</h2>
 				<h2>Membership Application</h2>
+				<div class="deadline">Deadline - December 10th, 2013</div>
 			</div>
 		</div>
 		<div class="jumbotron dark">
 	    	<div class="container">
 
-
+				
 	    		<form action="/api/contact" method="post" role="form">
-	    		<div class="row">
+	    		<div class="row col-md-6">
 	    			<u><h2>About You</h2></u>
 	    			<div class="form-group">
 						<label for="name">Name</label>
@@ -59,11 +62,11 @@
 						<input type="text" class="form-control" name="title" id="title" placeholder="Title">
 					</div>
 					<div class="form-group">
-						<label for="contact_email">Contact Email Address</label>
+						<label for="contact_email">Email Address</label>
 						<input type="email" class="form-control" name="contact_email" id="contact_email" placeholder="Contact Email Address">
 					</div>
 					<div class="form-group">
-						<label for="contact_phone">Contact Phone</label>
+						<label for="contact_phone">Phone</label>
 						<input type="tel" class="form-control" name="contact_phone" id="contact_phone" placeholder="Contact Phone">
 					</div>
 	    			<br clear="all" />
@@ -82,11 +85,11 @@
 					</div>
 					<div class="form-group">
 						<label for="number_of_employees">Number of Employees</label>
-						<input type="number" class="form-control" name="number_of_employees" id="number_of_employees" placeholder="Number of Employees">
+						<input type="text" class="form-control" name="number_of_employees" id="number_of_employees" placeholder="Number of Employees">
 					</div>
 					<div class="form-group">
 						<label for="years_in_operation">Number of Years In Operation</label>
-						<input type="number" class="form-control" name="years_in_operation" id="years_in_operation" placeholder="Number of Years In Operation">
+						<input type="text" class="form-control" name="years_in_operation" id="years_in_operation" placeholder="Number of Years In Operation">
 					</div>
 					<div class="form-group">
 						<label for="annual_operating_budget">Annual Operating Budget</label>
@@ -94,6 +97,7 @@
 						  <option value="$0 - $500,000">$0 - $500,000</option>
 						  <option value="$500,000 - $1,00,000">$500,000 - $1,00,000</option>
 						  <option value="$1,000,000 – $10,000,000">$1,000,000 – $10,000,000</option>
+						  <option value="$10,000,000+">$10,000,000+</option>
 						</select>
 					</div>
 					<div class="form-group">

@@ -4,6 +4,7 @@ red:f5061d
 
 body {
 	background: black;
+	padding-top: 40px;
 }
 
 .main {
@@ -23,6 +24,7 @@ li {
 	border:none;
 	box-shadow: none;
 	margin-bottom: 0;
+	padding-top: 0;
 }
 
 .panel-body {
@@ -90,6 +92,10 @@ a.btn-primary:hover {
 
 .navbar-inverse .navbar-brand {
 	color: white;
+}
+
+.deadline {
+	color: red;
 }
 
 .jumbotron {
@@ -266,6 +272,38 @@ bottom: -40px !important;
 @media screen and (min-width: 1200px) {
   .adjust {
 	margin-top: 25px;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	body {
+		padding-top: 65px;
+	}
+
+
+
+.navbar-text p{
+	overflow: hidden;
+}
+	.navbar-text a{
+		width: 25%;
+		display: block;
+		float: left;
+		margin: 0;
+		padding: 10px 0;
+		
+	}
+	.navbar-brand {
+		float: none !important;
+		margin-top: 5px;
+	}
+  .navbar-header {
+	text-align: center;
+	padding-top: 15px;
+	}
+	.navbar-header p{
+		width: 100%;
+	float: none !important;
 	}
 }
 
