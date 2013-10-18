@@ -14,6 +14,9 @@ body {
 h4 {
 	line-height: 28px;
 }
+h2 {
+	font-size: 42px !important;
+}
 
 li {
 	line-height: 25px
@@ -150,9 +153,7 @@ font-size: 18px;
 	padding: 20px 60px;
 }
 
-.sub-page-title {
-	font-size: 50px;
-}
+
 .btn-primary.red:hover {
 	border: none;
 	background: #E9091E;
@@ -236,7 +237,7 @@ footer .container {
 }
 
 .footer-nav a {
-	padding: 5px;
+	padding: 8px;
 }
 
 footer .pull-right a{
@@ -278,6 +279,10 @@ footer h4 {
 @media screen and (max-width: 650px) {
 	body {
 		padding-top: 0;
+	}
+
+	h2 {
+		font-size: 36px !important;
 	}
 	
 	.navbar-fixed-top, .navbar-fixed-bottom {
@@ -321,6 +326,20 @@ footer h4 {
 		display: block;
 		margin-bottom: 10px;
 
+	}
+
+	footer .pull-right a{
+		padding-bottom: 10px;
+	}
+
+	footer {
+		text-align: center;
+	}
+
+	.copyright {
+		display: block;
+		padding: 8px;
+		color: #646464;
 	}
 
 }
