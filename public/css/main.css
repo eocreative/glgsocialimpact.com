@@ -279,3 +279,11 @@ display: block;
 	text-align: right;
 }
 
+textarea.form-control {
+	height: 250px;
+	width: 600px;
+}
+
+textarea.small-textarea {
+	height: 100px;
+}
