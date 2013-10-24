@@ -258,6 +258,9 @@ footer h4 {
 	margin-top: 17px;
 }
 
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+bottom: -40px !important;
+}
 
 
 @media screen and (min-width: 1200px) {
