@@ -69,7 +69,7 @@ end #before
 post '/api/contact' do
 
   begin
-    @log.info params.to_json
+    puts params.to_json
     # @log.debug request.env.to_json
     template = render_file('application_email.mustache', params)
     # @log.debug template
