@@ -10,7 +10,7 @@ def send_email(opts={})
     opts[:from_alias]  ||= 'GLGimpact.com Application'
     opts[:subject]     ||= "GLGimpact.com Application Submission"
     opts[:body]        ||= "Error processing the body of the message."
-
+  @log.debug "TO address #{opts[:to]}"
     msg = <<END_OF_MESSAGE
 From: #{opts[:from_alias]} <#{opts[:from]}>
 To: <#{opts[:to]}>
