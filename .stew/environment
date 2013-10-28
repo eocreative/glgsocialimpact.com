@@ -4,7 +4,7 @@
 export APP_DIRECTORY=#{@global_options.directory}
 if [ x$GLGENV == xPRD ] ; then
 	echo 'In prod, using env variables'
-	export GLGIMPACT_EMAIL_CONTACT='info@glgimpact.com'
+	export GLGIMPACT_EMAIL_CONTACT='jfield@glgroup.com'
 else
 	export GLGIMPACT_EMAIL_CONTACT='falleyne@glgroup.com'
 fi
