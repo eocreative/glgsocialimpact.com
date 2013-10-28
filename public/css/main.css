@@ -374,3 +374,7 @@ textarea.form-control {
 textarea.small-textarea {
 	height: 100px;
 }
+
+.required {
+	color: red;
+}
