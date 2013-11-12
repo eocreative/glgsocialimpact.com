@@ -30,6 +30,7 @@ li {
 	padding-top: 0;
 }
 
+
 .panel-body {
 line-height: 25px;
 }
@@ -75,27 +76,35 @@ a.btn-primary:hover {
 	border-bottom: solid 4px #DF081D;
 }
 
-.navbar {
-	border-radius: 0;
-	margin-bottom: 0;
+@media (min-width: 768px)
+.container {
+max-width: 95%;
 }
 
+/*.navbar {
+	border-radius: 0;
+	margin-bottom: 0;
+}*/
+/*
 .navbar-text a {
 	color: white;
-	margin-left: 10px;
+	margin-left: 25px;
 }
 
 .navbar-text {
 	margin-right: 15px;
 }
 
-.navbar-brand {
-	font-size: 26px;
-}
 
+
+*/
 .navbar-inverse .navbar-brand {
 	color: white;
 }
+.navbar-brand {
+	font-size: 22px;
+}
+
 
 .deadline {
 	color: red;
@@ -286,15 +295,13 @@ footer h4 {
 }
 
 @media screen and (max-width: 650px) {
-	body {
-		padding-top: 0;
-	}
+
 
 	h2 {
 		font-size: 36px !important;
 	}
 	
-	.navbar-fixed-top, .navbar-fixed-bottom {
+/*	.navbar-fixed-top, .navbar-fixed-bottom {
 		position: relative;
 		border-width: 0 0 1px;
 	}
@@ -325,7 +332,7 @@ footer h4 {
 		float: none !important;
 		overflow: hidden;
 		margin: 0;
-	}
+	}*/
 	footer .container span {
 		float: none !important;
 		text-align: center;
@@ -353,10 +360,10 @@ footer h4 {
 
 }
 
-.container > .navbar-header, .container > .navbar-collapse {
+/*.container > .navbar-header, .container > .navbar-collapse {
 	float: none;
 	display: block;
-}
+}*/
 
 .panel-heading {
 	font-weight: bold;
