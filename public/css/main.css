@@ -2,6 +2,22 @@
 red:f5061d
 */
 
+@font-face {
+    font-family: "thinfont";
+    src: url("http://glg.it/wp-content/themes/a17_theme/fonts/NHaasGroteskDSW02-15UltTh/NHaasGroteskDSW02-15UltTh.woff") format('woff');
+}
+
+@font-face {
+    font-family: "mediumfont";
+    src: url("http://glg.it/wp-content/themes/a17_theme/fonts/NHaasGroteskDSW02-45Lt/NHaasGroteskDSW02-45Lt.woff") format('woff');
+}
+
+@font-face {
+    font-family: "glgfont";
+    src: url("http://glg.it/wp-content/themes/a17_theme/fonts/glg-icons/GLG_PD_131126.ttf") format('truetype');
+}
+
+
 body {
 	background: black;
 	padding-top: 40px;
@@ -9,6 +25,11 @@ body {
 
 .main {
 	background: white;
+}
+
+h1 {
+	font-family: mediumfont;
+	color: #000;
 }
 
 h4 {
@@ -21,6 +42,15 @@ h2 {
 li {
 	line-height: 25px
 }
+
+a {
+	color:#ef272d;
+}
+
+a:hover {
+	color:#ef272d;
+}
+
 
 .well {
 	background: none;
@@ -104,13 +134,49 @@ max-width: 95%;
 
 
 */
+
+#glg-intro-text-logo {
+	font-family: glgfont;
+	font-weight: 400;
+	color: #fff;
+	font-size: 86px;
+	line-height: 86px;
+}
+
+#glg-intro-text {
+	font-family: thinfont;
+	color: #fff;
+	font-size: 86px;
+	line-height: 86px;
+
+}
+
+.fellows {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.fellows h4 {
+	font-family: mediumfont;
+}
+
+.fellows img{
+	width: 150px;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+.learn-more {
+	margin-top: 40px;
+}
+
 .navbar-inverse .navbar-brand {
 	color: white;
 }
 .navbar-brand {
 	font-size: 22px;
 }
-
 
 .deadline {
 	color: red;
@@ -125,7 +191,8 @@ font-size: 18px;
 	background: none;
 }
 .jumbo-first{
-	padding-top: 20px;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 
@@ -133,19 +200,87 @@ font-size: 18px;
 	text-align: left;
 }
 
-.jumbotron.dark{
-	background: #f2f2f2 url('../img/squairy_light.png');
-	box-shadow: 0 0 15px rgba(0,0,0,.4);
-	/*background: #f2f2f2;*/
+.jumbotron.white{
+	background: #fff;
+}
+
+.jumbotron.black h1{
+	color: #fff;
+}
+
+.jumbotron.black p{
+	color: #fff;
+}
+
+.jumbotron.black h4{
+	color: #fff;
+}
+
+.jumbotron.black{
+	background: #000;
+}
+
+.jumbotron.grey h1{
+	color: #000;
+}
+
+.jumbotron.grey p{
+	color: #000;
+}
+
+.jumbotron.grey h4{
+	color: #000;
+}
+
+.jumbotron.grey{
+	background: #f2f2f2;
+	padding-top: 100px;
+	padding-bottom: 90px;
+}
+
+.bxslider #quote {
+	font-family: thinfont;
+	font-size: 29px;
+	line-height: 29px;
+}
+
+.bxslider #quote-name {
+	font-family: mediumfont;
+	font-size: 20px;
+	line-height: 20px;
+	text-transform: uppercase;
 }
 
 .withbg {
 	background: url("../img/map.png") no-repeat 105% 0;
+	background-color: #000;
 }
 
-@media screen and (max-width: 750px) {
-	.withbg {
-	background: none;
+.withbg p{
+	color: #fff;
+}
+
+@media screen and (max-width: 850px) {
+	#glg-intro-text {
+		font-size: 60px;
+		line-height: 60px;
+	}
+
+	#glg-intro-text-logo {
+		font-size: 60px;
+		line-height: 60px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	#glg-intro-text {
+		font-size: 30px;
+		line-height: 30px;
+	}
+
+	#glg-intro-text-logo {
+		font-size: 30px;
+		line-height: 30px;
 	}
 }
 
@@ -391,3 +526,17 @@ textarea.small-textarea {
 .required {
 	color: red;
 }
+
+.navbar-brand {
+	width: 77px;
+	height: 50px;
+	margin-top: -7px;
+	background-position: 0 -78px;
+	background-image: url(../img/logo.png);
+}
+
+
+
+
+
+
