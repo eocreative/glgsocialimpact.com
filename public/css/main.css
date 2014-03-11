@@ -36,21 +36,17 @@ h4 {
 	line-height: 28px;
 }
 h2 {
-	font-size: 42px !important;
+	font-size: 35px !important;
 }
 
 li {
 	line-height: 25px
 }
 
-a {
-	color:#ef272d;
+.application label {
+	font-size: 16px;
+	color: #777777;
 }
-
-a:hover {
-	color:#ef272d;
-}
-
 
 .well {
 	background: none;
@@ -135,12 +131,37 @@ max-width: 95%;
 
 */
 
+#glg-nav-logo {
+	font-family: glgfont;
+	font-weight: 400;
+	color: #fff;
+	font-size: 20px;
+	line-height: 20px;
+	position: absolute;
+	top: 12px;
+}
+
+#glg-nav-logo-text {
+	font-family: thinfont;
+	color: #fff;
+	font-size: 24px;
+	line-height: 20px;
+	position: absolute;
+	top: 15px;
+	margin-left: 55px;
+	text-transform: uppercase;
+}
+
+.navbar-nav {
+	margin-left: 210px;
+}
+
 #glg-intro-text-logo {
 	font-family: glgfont;
 	font-weight: 400;
 	color: #fff;
-	font-size: 86px;
-	line-height: 86px;
+	font-size: 76px;
+	line-height: 76px;
 }
 
 #glg-intro-text {
@@ -149,6 +170,19 @@ max-width: 95%;
 	font-size: 86px;
 	line-height: 86px;
 
+}
+
+.partners-home {
+	text-align: center;
+}
+
+.partners-home img{
+	width: 130px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	filter: grayscale(100%);
 }
 
 .fellows {
@@ -182,11 +216,21 @@ max-width: 95%;
 	color: red;
 }
 
-.jumbotron {
-font-size: 18px;
+.jumbotron a {
+	color:#ef272d;
+	text-decoration: none;
+	font-weight: normal;
 }
 
+.jumbotron a:hover {
+	color:#ef272d;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+
 .jumbotron {
+	font-size: 18px;
 	margin-bottom: 0;
 	background: none;
 }
@@ -235,7 +279,7 @@ font-size: 18px;
 .jumbotron.grey{
 	background: #f2f2f2;
 	padding-top: 100px;
-	padding-bottom: 90px;
+	padding-bottom: 60px;
 }
 
 .bxslider #quote {
@@ -250,6 +294,17 @@ font-size: 18px;
 	line-height: 20px;
 	text-transform: uppercase;
 }
+
+.apply-button {
+	background-color: #ef272d;
+	border: 1px solid #ef272d;
+}
+
+.apply-button:hover {
+	background-color: #ef272d;
+	border: 1px solid #ef272d;
+}
+
 
 .withbg {
 	background: url("../img/map.png") no-repeat 105% 0;
@@ -267,8 +322,8 @@ font-size: 18px;
 	}
 
 	#glg-intro-text-logo {
-		font-size: 60px;
-		line-height: 60px;
+		font-size: 50px;
+		line-height: 50px;
 	}
 }
 
@@ -279,8 +334,8 @@ font-size: 18px;
 	}
 
 	#glg-intro-text-logo {
-		font-size: 30px;
-		line-height: 30px;
+		font-size: 24px;
+		line-height: 24px;
 	}
 }
 
@@ -298,15 +353,16 @@ font-size: 18px;
 
 .btn-primary.red {
 	color: white;
-	background: #f5061d;
+	background: #E9091E;
 	border: none;
-	padding: 20px 60px;
+	padding: 10px 40px;
 }
 
 
 .btn-primary.red:hover {
 	border: none;
 	background: #E9091E;
+	color: #ffffff;
 }
 
 
@@ -371,6 +427,7 @@ blockquote {
 	float: left;
 	height: 40px;
 }
+
 .partners {
 	text-align: left;
 	margin-top: 40px;
@@ -378,6 +435,24 @@ blockquote {
 
 .partners .row {
 	margin-bottom: 20px;
+}
+
+.partners img{
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+.partners img:hover {
+	-webkit-filter: grayscale(0%);
+	-moz-filter: grayscale(0%);
+	filter: grayscale(0%);
+	 -o-transition:.3s;
+    -ms-transition:.3s;
+    -moz-transition:.3s;
+    -webkit-transition:.3s;
+    /* ...and now for the proper property */
+    transition:.3s;
 }
 
 .col-md-3:first-of-type{
