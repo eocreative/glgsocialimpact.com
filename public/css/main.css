@@ -20,7 +20,6 @@ red:f5061d
 
 body {
 	background: black;
-	padding-top: 40px;
 }
 
 .main {
@@ -139,6 +138,7 @@ max-width: 95%;
 	line-height: 20px;
 	position: absolute;
 	top: 12px;
+	margin-left:3px;
 }
 
 #glg-nav-logo-text {
@@ -148,7 +148,7 @@ max-width: 95%;
 	line-height: 20px;
 	position: absolute;
 	top: 15px;
-	margin-left: 55px;
+	margin-left: 58px;
 	text-transform: uppercase;
 }
 
@@ -167,24 +167,29 @@ max-width: 95%;
 	font-family: glgfont;
 	font-weight: 400;
 	color: #fff;
-	font-size: 76px;
-	line-height: 76px;
+	font-size: 37px;
+	line-height: 37px;
 }
 
 #glg-intro-text {
 	font-family: thinfont;
 	color: #fff;
-	font-size: 86px;
-	line-height: 86px;
-
+	font-size: 36px;
+	line-height: 36px;
 }
+
+#glg-intro-social-impact {
+	font-size: 46px;
+}
+
+
 
 .partners-home {
 	text-align: center;
 }
 
 .partners-home img{
-	width: 130px;
+	width: 150px;
 	margin-top: 25px;
 	margin-bottom: 25px;
 	-webkit-filter: grayscale(100%);
@@ -289,8 +294,8 @@ max-width: 95%;
 	background: none;
 }
 .jumbo-first{
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-top: 140px;
+	padding-bottom: 140px;
 }
 
 
@@ -337,9 +342,9 @@ max-width: 95%;
 }
 
 .bxslider #quote {
-	font-family: thinfont;
+	font-family: mediumfont;
 	font-size: 29px;
-	line-height: 29px;
+	line-height: 36px;
 }
 
 .bxslider #quote-name {
@@ -347,6 +352,7 @@ max-width: 95%;
 	font-size: 20px;
 	line-height: 20px;
 	text-transform: uppercase;
+	color: #777;
 }
 
 .apply-button {
@@ -371,18 +377,6 @@ max-width: 95%;
 
 @media screen and (max-width: 850px) {
 	#glg-intro-text {
-		font-size: 60px;
-		line-height: 60px;
-	}
-
-	#glg-intro-text-logo {
-		font-size: 50px;
-		line-height: 50px;
-	}
-}
-
-@media screen and (max-width: 450px) {
-	#glg-intro-text {
 		font-size: 30px;
 		line-height: 30px;
 	}
@@ -390,6 +384,11 @@ max-width: 95%;
 	#glg-intro-text-logo {
 		font-size: 24px;
 		line-height: 24px;
+	}
+
+	#glg-intro-social-impact {
+		font-size: 30px;
+		line-height: 30px;
 	}
 }
 

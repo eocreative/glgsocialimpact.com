@@ -46,14 +46,14 @@ configure do
 end
 
 after do
-  @logfile.close
+  # @logfile.close
 end
 
 before do
   @home = ENV['APP_DIRECTORY'] || '/home/glgapp/glgimpact'
-  @logfile = File.open("#{@home}/var/log/glgimpact-api.log", File::WRONLY | File::APPEND | File::CREAT)
-  @log = Logger.new(@logfile, 10, 1024000)
-  @log.level = ENV['GLGENV'] == 'PRD' ? Logger::INFO : Logger::DEBUG 
+  # @logfile = File.open("#{@home}/var/log/glgimpact-api.log", File::WRONLY | File::APPEND | File::CREAT)
+  #@log = Logger.new(@logfile, 10, 1024000)
+  #@log.level = ENV['GLGENV'] == 'PRD' ? Logger::INFO : Logger::DEBUG 
  
 
   #content_type :json 
