@@ -34,6 +34,7 @@ h1 {
 h4 {
 	line-height: 28px;
 }
+
 h2 {
 	font-size: 35px !important;
 }
@@ -170,6 +171,7 @@ max-width: 95%;
 	color: #fff;
 	font-size: 37px;
 	line-height: 37px;
+	color: #ef272d;
 }
 
 #glg-intro-text {
@@ -177,20 +179,29 @@ max-width: 95%;
 	color: #fff;
 	font-size: 36px;
 	line-height: 36px;
+
 }
 
 #glg-intro-social-impact {
 	font-size: 46px;
+	color: #ef272d;
 }
 
-
+#country-map-footer {
+	color: #ef272d !important;
+	font-family: thinfont;
+	position: absolute;
+	bottom:3px;
+	right:6px;
+	font-size: 15px;
+}
 
 .partners-home {
 	text-align: center;
 }
 
 .partners-home img{
-	width: 150px;
+	max-width: 150px;
 	margin-top: 25px;
 	margin-bottom: 25px;
 	-webkit-filter: grayscale(100%);
@@ -229,6 +240,10 @@ max-width: 95%;
 @media screen and (max-width: 990px) {
 	.fellow-block {
 		margin-bottom: 55px;
+	}
+
+	#country-map-footer {
+		font-size: 13px;
 	}
 
 }
@@ -370,11 +385,13 @@ max-width: 95%;
 .withbg {
 	background: url("../img/map.png") no-repeat 105% 0;
 	background-color: #000;
+	position: relative;
 }
 
 .withbg p{
 	color: #fff;
 }
+
 
 @media screen and (max-width: 850px) {
 	#glg-intro-text {
@@ -390,6 +407,8 @@ max-width: 95%;
 	#glg-intro-social-impact {
 		font-size: 30px;
 		line-height: 30px;
+		font-family: thinfont;
+		color:#ef272d;
 	}
 }
 
