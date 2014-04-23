@@ -314,6 +314,18 @@ max-width: 95%;
 	padding-bottom: 140px;
 }
 
+@media screen and (max-width: 850px) {
+	.jumbo-first{
+		padding-bottom: 115px;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.jumbo-first{
+		padding-bottom: 90px;
+	}
+}
+
 
 .jumbo-primary .row p{
 	text-align: left;
@@ -383,10 +395,16 @@ max-width: 95%;
 
 
 .withbg {
-	background: url("../img/map.png") no-repeat 105% 0;
+	background: url("../img/map1.jpg") no-repeat 105% 0;
 	background-color: #000;
 	position: relative;
 }
+
+@media screen and (max-width: 850px) {
+	.withbg {
+		background-size:100%;
+	}
+
 
 .withbg p{
 	color: #fff;
@@ -397,11 +415,13 @@ max-width: 95%;
 	#glg-intro-text {
 		font-size: 30px;
 		line-height: 30px;
+		text-shadow: 2px 2px 2px #000; 
 	}
 
 	#glg-intro-text-logo {
 		font-size: 24px;
 		line-height: 24px;
+		text-shadow: 2px 2px 2px #000; 
 	}
 
 	#glg-intro-social-impact {
