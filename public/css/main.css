@@ -179,12 +179,35 @@ max-width: 95%;
 	color: #fff;
 	font-size: 36px;
 	line-height: 36px;
-
+	max-width: 500px;
 }
 
 #glg-intro-social-impact {
-	font-size: 46px;
-	color: #ef272d;
+		font-size: 46px;
+		color:#ef272d;
+}
+
+.intro-break {
+	display: block;
+}
+
+@media screen and (max-width: 850px) {
+	#glg-intro-text {
+		font-size: 30px;
+		line-height: 30px;
+		text-shadow: 2px 2px 2px #000; 
+		max-width: 330px;
+	}
+
+	#glg-intro-text-logo {
+		font-size: 24px;
+		line-height: 24px;
+		text-shadow: 2px 2px 2px #000; 
+	}
+
+	#glg-intro-social-impact {
+		font-size: 30px;
+	}
 }
 
 #country-map-footer {
@@ -194,6 +217,7 @@ max-width: 95%;
 	bottom:3px;
 	right:6px;
 	font-size: 15px;
+	letter-spacing:1px;
 }
 
 .partners-home {
@@ -209,12 +233,21 @@ max-width: 95%;
 	filter: grayscale(100%);
 }
 
-.fellows {
+.row.fellows {
 	text-align: center;
+	margin-bottom: 30px;
 }
+
+@media screen and (max-width: 767px) {
+	.row.fellows {
+		margin-bottom: 0px;
+	}
+}
+
 
 .fellows h4 {
 	font-family: mediumfont;
+	line-height: 19px
 }
 
 .fellows img {
@@ -322,7 +355,7 @@ max-width: 95%;
 
 @media screen and (max-width: 650px) {
 	.jumbo-first{
-		padding-bottom: 90px;
+		padding-bottom: 50px;
 	}
 }
 
@@ -403,34 +436,12 @@ max-width: 95%;
 @media screen and (max-width: 850px) {
 	.withbg {
 		background-size:100%;
-		background-position: 50%;
+		background-position: 49px;
 	}
-
+}
 
 .withbg p{
 	color: #fff;
-}
-
-
-@media screen and (max-width: 850px) {
-	#glg-intro-text {
-		font-size: 30px;
-		line-height: 30px;
-		text-shadow: 2px 2px 2px #000; 
-	}
-
-	#glg-intro-text-logo {
-		font-size: 24px;
-		line-height: 24px;
-		text-shadow: 2px 2px 2px #000; 
-	}
-
-	#glg-intro-social-impact {
-		font-size: 30px;
-		line-height: 30px;
-		font-family: thinfont;
-		color:#ef272d;
-	}
 }
 
 .glg-network img{
@@ -705,9 +716,3 @@ textarea.small-textarea {
 	background-position: 0 -78px;
 	background-image: url(../img/logo.png);
 }
-
-
-
-
-
-
