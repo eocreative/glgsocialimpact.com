@@ -168,10 +168,9 @@ max-width: 95%;
 #glg-intro-text-logo {
 	font-family: glgfont;
 	font-weight: 400;
-	color: #fff;
+	color: #ef272d;
 	font-size: 37px;
 	line-height: 37px;
-	color: #ef272d;
 }
 
 #glg-intro-text {
@@ -211,7 +210,7 @@ max-width: 95%;
 }
 
 #country-map-footer {
-	color: #ef272d !important;
+	color: #C2C2C2 !important;
 	font-family: thinfont;
 	position: absolute;
 	bottom:3px;
@@ -715,4 +714,42 @@ textarea.small-textarea {
 	margin-top: -7px;
 	background-position: 0 -78px;
 	background-image: url(../img/logo.png);
+}
+
+.jumbotron.press-bar {
+	background-color: #ef272d !important;
+	color: white;
+	font-family: thinfont;
+	position: relative;
+	display: none;
+}
+
+.jumbotron.press-bar:hover {
+	background-color: #D11318 !important;
+}
+
+#press-text {
+	color: white;
+	font-size: 36px;
+	line-height: 38px;
+	font-family: thinfont;
+}
+.arrow-link span:after {
+	background: transparent url(../img/arrow-link.png) 0 center no-repeat;
+	content: '';
+	display: inline-block;
+	height: 15px;
+	margin-left: 11px;
+	vertical-align: baseline;
+	width: 8px;
+}
+
+.blog-iframe {
+	height: 1300px;
+	margin-bottom: -47px;
+}
+
+.blog-iframe iframe {
+	margin-top: -50px;
+	height: 100%;
 }
