@@ -59,6 +59,7 @@ http {
         }
 
         location /fellows {
+            root {{directory}}/public;
             rewrite ^ /fellows.html permanent;
         }
     }
