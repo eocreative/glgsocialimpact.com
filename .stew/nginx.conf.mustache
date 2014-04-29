@@ -47,8 +47,9 @@ http {
 		index index.html;
         }
 
-        if ($args ~ “fellows”) {
-            rewrite ^ /fellows.html permanent;
+        location /fellows {
+        root {{directory}}/public;
+        index fellows.html;
         }
 
 
