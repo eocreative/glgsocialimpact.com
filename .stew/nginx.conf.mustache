@@ -47,9 +47,8 @@ http {
 		index index.html;
         }
 
-        location /fellows {
-        root {{directory}}/public;
-        index fellows.html;
+        location = /fellows {
+            return 301 $scheme://www.glgsocialimpact.com/fellows.html;
         }
 
 
