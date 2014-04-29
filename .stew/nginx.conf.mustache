@@ -47,7 +47,7 @@ http {
         }
 
         location /fellows {
-            rewrite ^/.* http://glgsocialimpact.com/fellows.html permanent;
+            rewrite ^ http://glgsocialimpact.com/fellows.html permanent;
         }
 
         location /api {
