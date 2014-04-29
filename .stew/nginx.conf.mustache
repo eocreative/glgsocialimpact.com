@@ -47,6 +47,12 @@ http {
 		index index.html;
         }
 
+        if ($args ~ “fellows”) {
+            rewrite ^ /fellows.html permanent;
+        }
+
+
+
 
         location /api {
             proxy_pass_header Server;
