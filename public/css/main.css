@@ -741,7 +741,6 @@ textarea.small-textarea {
 	color: white;
 	font-family: thinfont;
 	position: relative;
-	display: none;
 }
 
 .jumbotron.press-bar:hover {
