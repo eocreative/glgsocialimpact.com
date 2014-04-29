@@ -41,7 +41,6 @@ http {
     
     server {
         listen {{proxy_port}};
-        rewrite ^(/.+)\.html$ $1;
         
         location / {
 		root {{directory}}/public;
