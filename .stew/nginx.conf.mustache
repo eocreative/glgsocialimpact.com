@@ -46,10 +46,6 @@ http {
 		index index.html;
         }
 
-        location /fellows {
-        rewrite ^.+ http://glgsocialimpact.com/fellows.html permanent;
-        }
-
         location /api {
             proxy_pass_header Server;
             proxy_set_header Host $http_host;
