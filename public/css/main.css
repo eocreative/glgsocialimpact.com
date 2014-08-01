@@ -186,7 +186,7 @@ max-width: 95%;
 #glg-intro-text-logo {
 	font-family: glgfont;
 	font-weight: 400;
-	color: #ef272d;
+	color: #fff;
 	font-size: 37px;
 	line-height: 37px;
 }
@@ -201,7 +201,7 @@ max-width: 95%;
 
 #glg-intro-social-impact {
 		font-size: 46px;
-		color:#ef272d;
+		color:#fff;
 }
 
 .intro-break {
