@@ -9,7 +9,6 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    aws: grunt.file.readJSON('.aws.json'),
     s3: {
       options: {
         accessKeyId: process.env.AWS_ACCESS_KEY_ID,
