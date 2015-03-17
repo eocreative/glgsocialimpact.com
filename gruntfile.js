@@ -13,7 +13,7 @@ module.exports = function(grunt) {
       options: {
         accessKeyId: process.env.AWS_ACCESS_KEY_ID,
         secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-        bucket: process.env.AWS_HOSTNAME,
+        bucket: process.env.AWS_BUCKET,
         region: process.env.AWS_REGION
       },
       build: {
