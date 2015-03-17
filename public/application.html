@@ -81,7 +81,7 @@
 			<br/>
 				
 			<div class="application">
-	    		<form action="/api/contact" method="post" role="form">
+	    		<form action="//services.glgresearch.com/form-mailer/socialimpact_application" method="post" role="form">
 	    		<div class="row col-md-6">
 	    			<h2>About You</h2>
 	    			<div class="form-group">
@@ -213,38 +213,5 @@
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-         $(document).ready(function () {          
-             $('#form-success').hide();
-             $('#form-fail').hide();
-             $("#try-again-button").click(function(event) {
-				    event.preventDefault();
-				    history.back(1);
-			 });
-             var url = $('form').attr('action');
-             
-             $('form').on('submit', function (e) {
-		         var reach = '&geographic_reach_selected=' + encodeURIComponent($('#geographic_reach').val());
-	             var annual_operating_budget = '&annual_operating_budget_selected=' + encodeURIComponent($('#annual_operating_budget').val());
-	             var data = $('form').serialize();
-	             console.log(data);
-	             var serialized_data = data + reach + annual_operating_budget;
-	             console.log(serialized_data);
-	             $.ajax({
-		            type: 'post',
-		            url: url,
-		            data: serialized_data,
-		            success: function () {
-		              	window.location.href = '/application-submit.html?status=success';
-		            },
-		            error: function () {
-		              	window.location.href = '/application-submit.html?status=fail';
-		            }
-		          });
-		          e.preventDefault();
-		        });           
-         });
-    </script>
-
   </body>
 </html>

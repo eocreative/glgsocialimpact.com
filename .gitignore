@@ -12,3 +12,5 @@ var/
 .supervisord
 .vagrant
 Vagrantfile
+.aws.json
+/env
