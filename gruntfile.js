@@ -6,6 +6,12 @@ module.exports = function(grunt) {
   // Static Webserver
   grunt.loadNpmTasks('grunt-contrib-connect');
 
+  // Use for templating
+  grunt.loadNpmTasks('grunt-ejs');
+
+  // Watch for changes in project and re-render
+  grunt.loadNpmTasks('grunt-contrib-watch');
+
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -26,13 +32,33 @@ module.exports = function(grunt) {
         options: {
           port: 8000,
           base: "public",
-          keepalive: true
+        }
+      }
+    },
+    ejs: {
+      all: {
+        cwd: 'src',
+        src: ['*.ejs', '!partials/**/*'],
+        dest: 'public/',
+        expand: true,
+        ext: '.html'
+      }
+    },
+    watch: {
+      scripts: {
+        files: ['src/*.ejs', 'src/partials/*.ejs'],
+        tasks: ['ejs'],
+        options: {
+          livereload: true
         }
       }
     }
   });
 
+
   // Default task(s).
   grunt.registerTask("default", ["connect"]);
+
+  grunt.registerTask("serve", ["connect", "watch"]);
 
 };
