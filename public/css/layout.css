@@ -199,5 +199,12 @@ footer .terms {
   color: #444444;
 }
 
+.col-centered{
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 section {
-  padding: 90px 0; }
+  padding: 90px 0;
+}
