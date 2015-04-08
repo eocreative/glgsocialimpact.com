@@ -9,6 +9,9 @@ module.exports = function(grunt) {
   // Use for templating
   grunt.loadNpmTasks('grunt-ejs');
 
+  // For CSS compilation
+  grunt.loadNpmTasks('grunt-contrib-sass');
+
   // Watch for changes in project and re-render
   grunt.loadNpmTasks('grunt-contrib-watch');
 
@@ -44,6 +47,21 @@ module.exports = function(grunt) {
         ext: '.html'
       }
     },
+    sass: {                              // Task
+      dist: {                            // Target
+        options: {                       // Target options
+          style: 'expanded',
+          sourcemap: 'none'
+        },
+        files: [{
+          expand: true,
+          cwd: 'src',
+          src: ['css/main.scss'],
+          dest: 'public/',
+          ext: '.css'
+        }]
+      }
+    },
     watch: {
       scripts: {
         files: ['src/*.ejs','src/fellows/*.ejs', 'src/partials/*.ejs'],
@@ -51,6 +69,13 @@ module.exports = function(grunt) {
         options: {
           livereload: true
         }
+      },
+      css: {
+        files: 'src/css/*.scss',
+        tasks: ['sass'],
+        options: {
+          livereload: true,
+        },
       }
     }
   });
