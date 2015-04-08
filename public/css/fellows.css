@@ -1,0 +1,8 @@
+.hero.catchafire {
+  background-image: url(/img/headers/catchafire.jpg);
+  background-position: center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

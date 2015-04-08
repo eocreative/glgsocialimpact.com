@@ -1,3 +1,47 @@
+.hero {
+  display: table;
+  min-height: 475px;
+  width: 100%;
+  background-repeat: no-repeat !important;
+  overflow: hidden;
+}
+.hero h1 {
+  font-family: "NHaasGroteskDSW02-Bd", sans-serif;
+  font-size: 36px;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+@media only screen and (min-width:650px) {
+  .hero h1 {
+    font-size: 42px;
+  }
+}
+@media only screen and (min-width:768px) {
+  .hero h1 {
+    font-size: 60px;
+    line-height: 64px;
+  }
+}
+.hero h2 {
+  color: #fff;
+}
+
+.hero .text-outer {
+  display: table-row;
+}
+.hero .text-inner {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+}
+.hero.mini-hero {
+  min-height: 300px;
+}
+.hero.mini-hero h1 {
+  font-size: 36px;
+}
 nav {
   padding: 0 10px;
 }
@@ -198,23 +242,22 @@ footer .terms {
   display: block;
   color: #444444;
 }
-
-.col-centered{
+.center-block {
+  margin: 0 auto;
+}
+.col-centered {
   float: none;
   margin-left: auto;
   margin-right: auto;
 }
-
 section {
   padding: 90px 0;
 }
-
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
   height: 0;
 }
-
 .videoWrapper iframe {
   position: absolute;
   top: 0;
