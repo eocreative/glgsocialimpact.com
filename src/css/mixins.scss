@@ -1,0 +1,38 @@
+$bp-small : 480px;
+$bp-small-plus : 650px;
+$bp-medium : 768px;
+$bp-large : 992px;
+$bp-xlarge : 1200px;
+
+@mixin breakp ($breaksize){
+    @media only screen and (min-width: $breaksize) { @content; }
+}
+
+
+// OPACITY
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+// BACKGROUND COVER
+@mixin backgroundCover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@mixin borderRadius ($r) {
+  -webkit-border-radius: $r;
+  -moz-border-radius: $r;
+  -ms-border-radius: $r;
+  -o-border-radius: $r;
+  border-radius: $r;
+
+  // keeps background from busting out of border 
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
