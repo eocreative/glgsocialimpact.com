@@ -40,14 +40,17 @@
   font-weight: normal;
   font-style: normal;
 }
+
 body {
   font-size: 16px;
   font-family: "NHaasGroteskDSW02-45Lt", sans-serif;
   margin-top: 75px;
 }
+
 strong, b {
   font-family: "NHaasGroteskDSW02-45Lt", sans-serif;
 }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "NHaasGroteskDSW02-45Lt", sans-serif;
   letter-spacing: .02em;
@@ -55,11 +58,13 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   margin-top: 0;
 }
+
 h1 {
   font-size: 34px;
   line-height: 40px;
   margin-bottom: .6em;
 }
+
 h2 {
   color: #444444;
   font-family: "NHaasGroteskDSW02-45Lt", sans-serif;
@@ -67,11 +72,13 @@ h2 {
   line-height: 44px;
   margin-bottom: 0.5em;
 }
+
 h3 {
   font-size: 26px;
   line-height: 38px;
   margin-bottom: .3em;
 }
+
 h4 {
   font-weight: bold;
   color: #333;
@@ -79,20 +86,24 @@ h4 {
   letter-spacing: .01em;
   margin-bottom: .2em;
 }
+
 h5 {
   font-size: 18px;
 }
 
-p.subhead {
-  color: #5b5b5b;
-  font-family: "NHaasGroteskDSW02-35XLt", sans-serif;
-  font-size: 22px;
-  line-height: 34px;
-  letter-spacing: 1px; }
-
-p.highlight {
-  color: #5b5b5b;
-  font-family: "NHaasGroteskDSW02-45Lt", sans-serif;
-  font-size: 16px;
-  line-height: 28px;
-  letter-spacing: 1px; }
+p {
+  &.subhead {
+    color: #5b5b5b;
+    font-family: "NHaasGroteskDSW02-35XLt", sans-serif;
+    font-size: 22px;
+    line-height: 34px;
+    letter-spacing: 1px;
+  }
+  &.highlight {
+    color: #5b5b5b;
+    font-family: "NHaasGroteskDSW02-45Lt", sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 1px;
+  }
+}
