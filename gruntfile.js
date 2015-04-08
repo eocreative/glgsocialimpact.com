@@ -46,7 +46,7 @@ module.exports = function(grunt) {
     },
     watch: {
       scripts: {
-        files: ['src/*.ejs', 'src/partials/*.ejs'],
+        files: ['src/*.ejs','src/fellows/*.ejs', 'src/partials/*.ejs'],
         tasks: ['ejs'],
         options: {
           livereload: true
