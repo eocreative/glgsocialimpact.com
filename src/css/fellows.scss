@@ -1,5 +1,80 @@
-.hero{
-  &.catchafire {
+.fellow-detail{
+  .focus-area{
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  .fellow-image{
+    max-width: 175px;
+    margin-bottom: 15px;
+  }
+
+  .fellow-about{
+    position: relative;
+    top: -145px;
+    margin-bottom: -145px;
+    .fellow-logo{
+      max-width: 300px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .fellow-bio{
+    margin-top: 40px;
+  }
+}
+
+// PROFILE OVERRIDES
+$allstarcode: #0078bd;
+$agora: #8eb947;
+$catchafire: #e13d25;
+$cityhealthworks: #4dc2c3;
+$crea: #b03090;
+$eastbalicashews: #8f6c5d;
+$nuru: #f59222;
+$resolution: #717275;
+$samasource: #f6ce17;
+$sparkmettle: #e26523;
+$stbernard: #0055a6;
+$ventureamerica: #264c72;
+
+.agora{
+  .hero{
+    background-color: $agora;
+    background-image: url(/img/headers/agora.jpg);
+    background-position: center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .focus-area{
+    background-color: $agora;
+  }
+}
+
+.allstarcode{
+  .hero{
+    background-color: $allstarcode;
+    background-image: url(/img/headers/allstarcode.jpg);
+    background-position: center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .focus-area{
+    background-color: $allstarcode;
+  }
+}
+
+.catchafire{
+  .hero{
+    background-color: $catchafire;
     background-image: url(/img/headers/catchafire.jpg);
     background-position: center top;
     -webkit-background-size: cover;
@@ -7,32 +82,142 @@
     -o-background-size: cover;
     background-size: cover;
   }
-}
-
-.fellow-image{
-  max-width: 175px;
-  margin-bottom: 15px;
-}
-
-.fellow-about{
-  position: relative;
-  top: -145px;
-  margin-bottom: -145px;
-  .fellow-logo{
-    max-width: 300px;
-    margin-top: 40px;
-    margin-bottom: 20px;
+  .focus-area{
+    background-color: $catchafire;
   }
 }
 
-.fellow-bio{
-  margin-top: 40px;
+.cityhealthworks{
+  .hero{
+    background-color: $cityhealthworks;
+    background-image: url(/img/headers/cityhealthworks.jpg);
+    background-position: center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .focus-area{
+    background-color: $cityhealthworks;
+  }
 }
-.focus-area{
-  background-color: #e13d25;
-  color: #fff;
-  display: inline-block;
-  font-size: 18px;
-  margin: 20px auto;
-  padding: 20px;
+
+.crea{
+  .hero{
+    background-color: $crea;
+    background-image: url(/img/headers/crea.jpg);
+    background-position: center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .focus-area{
+    background-color: $crea;
+  }
+}
+
+.eastbalicashews{
+  .hero{
+    background-color: $eastbalicashews;
+    background-image: url(/img/headers/eastbalicashews.jpg);
+    background-position: center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .focus-area{
+    background-color: $eastbalicashews;
+  }
+}
+
+.nuru{
+  .hero{
+    background-color: $nuru;
+    background-image: url(/img/headers/nuru.jpg);
+    background-position: center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .focus-area{
+    background-color: $nuru;
+  }
+}
+
+.resolutionproject{
+  .hero{
+    background-color: $resolution;
+    background-image: url(/img/headers/resolution.jpg);
+    background-position: center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .focus-area{
+    background-color: $resolution;
+  }
+}
+
+.samasource{
+  .hero{
+    background-color: $samasource;
+    background-image: url(/img/headers/samasource.jpg);
+    background-position: center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .focus-area{
+    background-color: $samasource;
+  }
+}
+
+.sparkmettle{
+  .hero{
+    background-color: $sparkmettle;
+    background-image: url(/img/headers/sparkmettle.jpg);
+    background-position: center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .focus-area{
+    background-color: $sparkmettle;
+  }
+}
+
+.stbernard{
+  .hero{
+    background-color: $stbernard;
+    background-image: url(/img/headers/stbernard.jpg);
+    background-position: center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .focus-area{
+    background-color: $stbernard;
+  }
+}
+
+.ventureamerica{
+  .hero{
+    background-color: $ventureamerica;
+    background-image: url(/img/headers/ventureamerica.jpg);
+    background-position: center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .focus-area{
+    background-color: $ventureamerica;
+  }
 }

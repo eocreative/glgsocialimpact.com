@@ -2,6 +2,14 @@ body{
   margin-top: 65px;
 }
 
+.btn-brand{
+  background-color: #000;
+  color: #fff !important;
+  &:hover{
+    color: #fff !important;
+  }
+}
+
 .hero {
   display: table;
   min-height: 300px;
