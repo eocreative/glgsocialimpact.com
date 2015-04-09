@@ -1,3 +1,20 @@
+.fellows{
+  .name{
+    font-size: 1em;
+    padding-top: 20px;
+    line-height: 18px;
+  }
+  .title{
+    font-size: 0.875em; /* 14/16 */
+    line-height: 18px;
+    margin-bottom: 40px;
+  }
+  .fellow-image{
+    max-width: 175px;
+    margin: 0 auto;
+  }
+}
+
 .fellow-detail{
   .focus-area{
     color: #fff;
