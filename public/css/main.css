@@ -7240,7 +7240,6 @@ td.visible-print {
 body {
   font-size: 16px;
   font-family: "NHaasGroteskDSW02-45Lt", sans-serif;
-  margin-top: 75px;
 }
 
 strong, b {
@@ -7304,11 +7303,10 @@ p.highlight {
 
 body {
   margin-top: 65px;
-  font-size: 16px;
 }
 
 .btn-brand {
-  background-color: #000;
+  background-color: #eb4f53;
   color: #fff !important;
 }
 .btn-brand:hover {
@@ -7403,7 +7401,7 @@ nav .container {
 }
 nav .btn-login {
   margin-top: 7px;
-  padding-top: 9px;
+  padding: 9px 10px 10px 10px;
   margin-left: 14px;
   background-color: transparent;
   outline: none !important;
@@ -7829,14 +7827,17 @@ section {
   margin-bottom: -150px;
 }
 
-.partner-logo {
+.partner-section .partner-logo {
   max-width: 200px;
   max-height: 200px;
   margin: 20px auto;
 }
-.partner-logo.bpeace {
+.partner-section .partner-logo.bpeace {
   max-height: 50px;
 }
-.partner-logo.endeavor {
+.partner-section .partner-logo.endeavor {
   margin-top: 40px;
+}
+.partner-section .learn-more {
+  margin-top: 15px;
 }

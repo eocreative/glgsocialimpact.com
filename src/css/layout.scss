@@ -1,10 +1,9 @@
 body{
   margin-top: 65px;
-  font-size: 16px;
 }
 
 .btn-brand{
-  background-color: #000;
+  background-color: $brand-color;
   color: #fff !important;
   &:hover{
     color: #fff !important;
@@ -92,7 +91,7 @@ nav {
   }
   .btn-login {
     margin-top: 7px;
-    padding-top: 9px;
+    padding: 9px 10px 10px 10px;
     margin-left: 14px;
     background-color: transparent;
     outline: none !important;
