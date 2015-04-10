@@ -7314,13 +7314,24 @@ body {
 }
 
 .hero {
+  background-color: #eb4f53;
   display: table;
-  min-height: 300px;
+  min-height: 250px;
   width: 100%;
   background-repeat: no-repeat !important;
   overflow: hidden;
 }
 @media only screen and (min-width: 650px) {
+  .hero {
+    min-height: 325px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hero {
+    min-height: 400px;
+  }
+}
+@media only screen and (min-width: 992px) {
   .hero {
     min-height: 475px;
   }
@@ -7328,7 +7339,6 @@ body {
 .hero h1 {
   font-family: "NHaasGroteskDSW02-Bd", sans-serif;
   font-size: 36px;
-  color: #fff;
   letter-spacing: 1px;
   margin-bottom: 0;
   text-transform: uppercase;
@@ -7344,8 +7354,15 @@ body {
     line-height: 64px;
   }
 }
-.hero h3 {
-  color: #fff;
+.hero p {
+  font-family: "NHaasGroteskDSW02-45Lt", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+@media only screen and (min-width: 650px) {
+  .hero p {
+    font-size: 20px;
+  }
 }
 .hero .text-outer {
   display: table-row;
@@ -7834,4 +7851,42 @@ section {
 }
 .partner-section .learn-more {
   margin-top: 15px;
+}
+
+.home-hero {
+  background-color: #eb4f53;
+  display: table;
+  min-height: 250px;
+  width: 100%;
+  background-repeat: no-repeat !important;
+  overflow: hidden;
+}
+@media only screen and (min-width: 650px) {
+  .home-hero {
+    min-height: 325px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .home-hero {
+    min-height: 400px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .home-hero {
+    min-height: 475px;
+  }
+}
+.home-hero .text-outer {
+  display: table-row;
+}
+.home-hero .text-inner {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+}
+.home-hero.mini-hero {
+  min-height: 300px;
+}
+.home-hero.mini-hero h1 {
+  font-size: 36px;
 }

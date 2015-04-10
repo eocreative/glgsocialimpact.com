@@ -10,19 +10,25 @@ body{
   }
 }
 
-.hero {
+.hero{
+  background-color: $brand-color; 
   display: table;
-  min-height: 300px;
+  min-height: 250px;
   width: 100%;
   background-repeat: no-repeat !important;
   overflow: hidden;
   @include breakp($bp-small-plus){
+    min-height: 325px;
+  }
+  @include breakp($bp-medium){
+    min-height: 400px;
+  }
+  @include breakp($bp-large){
     min-height: 475px;
   }
-  h1 {
-    font-family: "NHaasGroteskDSW02-Bd", sans-serif;
+  h1{
+    font-family: $heavy-font;
     font-size: 36px;
-    color: #fff;
     letter-spacing: 1px;
     margin-bottom: 0;
     text-transform: uppercase;
@@ -34,22 +40,25 @@ body{
       line-height: 64px;
     }
   }
-  h3 {
-    color: #fff;
+  p{
+    font-family: $medium-font;
+    font-size: 16px;
+    letter-spacing: 1px;
+    @include breakp($bp-small-plus){
+      font-size: 20px;
+    }
   }
-  .text-outer {
+  .text-outer{
     display: table-row;
   }
-  .text-inner {
+  .text-inner{
     display: table-cell;
     vertical-align: middle;
     position: relative;
   }
-  &.mini-hero {
+  &.mini-hero{
     min-height: 300px;
-    h1 {
-      font-size: 36px;
-    }
+    h1{font-size: 36px;}
   }
 }
 

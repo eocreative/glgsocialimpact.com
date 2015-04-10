@@ -14,3 +14,34 @@
     margin-top: 15px;
   }
 }
+
+.home-hero{
+  background-color: $brand-color; 
+  display: table;
+  min-height: 250px;
+  width: 100%;
+  background-repeat: no-repeat !important;
+  overflow: hidden;
+  @include breakp($bp-small-plus){
+    min-height: 325px;
+  }
+  @include breakp($bp-medium){
+    min-height: 400px;
+  }
+  @include breakp($bp-large){
+    min-height: 475px;
+  }
+  
+  .text-outer{
+    display: table-row;
+  }
+  .text-inner{
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+  }
+  &.mini-hero{
+    min-height: 300px;
+    h1{font-size: 36px;}
+  }
+}
