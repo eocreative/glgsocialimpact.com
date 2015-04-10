@@ -7374,12 +7374,9 @@ nav li > a {
   padding: 15px 0 5px 0 !important;
   display: inline-block !important;
 }
-nav .navbar-brand {
-  padding: 20px 15px;
-}
-nav .navbar-brand .logo {
-  font-size: 28px;
-  bottom: 11px;
+nav .logo {
+  max-width: 275px;
+  padding: 8px;
 }
 nav .navbar-nav li > a, nav .btn-login {
   font-size: 14px !important;
@@ -7426,17 +7423,6 @@ nav.navbar-default .navbar-toggle:hover nav.navbar-default .navbar-toggle:active
 nav.navbar-default .navbar-toggle:hover nav.navbar-default .navbar-toggle:active .icon-bar {
   background: rgba(0, 0, 0, 0.6);
 }
-nav.navbar-default .dropdown-toggle, nav.navbar-default.open a, nav.navbar-default .dropdown-toggle a:active {
-  color: #000 !important;
-  background: transparent !important;
-}
-nav.navbar-default .dropdown-menu {
-  margin-top: 6px;
-  color: #000;
-  background: #fff;
-  border: 1px solid #e0e0e0;
-  border-radius: 4px;
-}
 nav.navbar-default .navbar-brand {
   color: #000;
 }
@@ -7481,12 +7467,6 @@ nav.navbar-inverse {
 nav.navbar-inverse .btn-login {
   color: #fff;
   border: 1px solid #383838;
-}
-nav.navbar-inverse .phone-number {
-  color: #fff !important;
-}
-nav.navbar-inverse .phone-number:hover {
-  color: #fff !important;
 }
 nav.navbar-inverse .navbar-brand {
   color: #fff;

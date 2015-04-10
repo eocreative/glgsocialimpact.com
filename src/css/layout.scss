@@ -64,12 +64,9 @@ nav {
       display: inline-block !important;
     }
   }
-  .navbar-brand {
-    padding: 20px 15px;
-    .logo {
-      font-size: 28px;
-      bottom: 11px;
-    }
+  .logo {
+    max-width: 275px;
+    padding: 8px;
   }
   .navbar-nav li > a, .btn-login {
     font-size: 14px !important;
@@ -114,17 +111,6 @@ nav {
           background: rgba(0, 0, 0, 0.6);
         }
       }
-    }
-    .dropdown-toggle, &.open a, .dropdown-toggle a:active {
-      color: #000 !important;
-      background: transparent !important;
-    }
-    .dropdown-menu {
-      margin-top: 6px;
-      color: #000;
-      background: #fff;
-      border: 1px solid #e0e0e0;
-      border-radius: 4px;
     }
     .navbar-brand {
       color: #000;
@@ -172,12 +158,6 @@ nav {
     .btn-login {
       color: #fff;
       border: 1px solid #383838;
-    }
-    .phone-number {
-      color: #fff !important;
-      &:hover {
-        color: #fff !important;
-      }
     }
     .navbar-brand {
       color: #fff;
