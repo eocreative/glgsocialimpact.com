@@ -1,4 +1,4 @@
-.fellows{
+#fellows{
   .name{
     font-size: 1em;
     padding-top: 20px;
@@ -12,6 +12,12 @@
   .fellow-image{
     max-width: 175px;
     margin: 0 auto;
+  }
+}
+
+.small-fellows{
+  .fellow-thumb{
+    max-width: 60px;
   }
 }
 
