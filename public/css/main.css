@@ -7301,6 +7301,63 @@ p.highlight {
   letter-spacing: 1px;
 }
 
+.form-horizontal .control-group {
+  margin-bottom: 10px;
+}
+
+.control-label {
+  padding-top: 5px;
+  text-align: left !important;
+  display: block;
+  margin-bottom: 5px !important;
+  color: #5b5b5b;
+  font-family: "NHaasGroteskDSW02-45Lt", sans-serif;
+  font-size: 0.875em;
+  /* 14/16 */
+  line-height: 1.375em;
+  /* 22/16 */
+  letter-spacing: 1px;
+}
+
+.section-title {
+  color: #444;
+  font-size: 18px;
+  font-family: "NHaasGroteskDSW02-Bd", sans-serif;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+input[type=text].form-control,
+input[type=email].form-control,
+input[type=password].form-control {
+  border-color: #e7e7e7;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+
+input[type=password].form-control {
+  font: small-caption;
+  font-size: 18px;
+}
+
+textarea.form-control {
+  border-color: #e7e7e7;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  font-weight: normal;
+}
+
+select.form-control {
+  border-radius: 2px;
+  background-color: #fff;
+  border: 1px solid #e7e7e7;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+
 body {
   margin-top: 65px;
 }
