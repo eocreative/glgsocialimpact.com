@@ -1,25 +1,27 @@
-.impact-map{
-  .map-image{
-    width: 100%;
-    height: auto;
-    position: relative;
-    top: -150px;
-    z-index: -100;
-    margin-bottom: -150px;
+#about{
+  .impact-map{
+    .map-image{
+      width: 100%;
+      height: auto;
+      position: relative;
+      top: -150px;
+      z-index: -100;
+      margin-bottom: -150px;
+    }
   }
-}
-.partner-about{
-  .row{
-    margin-bottom: 40px;
-  }
-  .partner-logo{
-    display: block;
-    text-align: center;
-    min-height: 100px;
-    img{
-      max-width: 200px;
-      max-height: 75px;
-      margin: 0 auto;
+  .partner-about{
+    .row{
+      margin-bottom: 40px;
+    }
+    .partner-logo{
+      display: block;
+      text-align: center;
+      min-height: 100px;
+      img{
+        max-width: 200px;
+        max-height: 75px;
+        margin: 0 auto;
+      }
     }
   }
 }

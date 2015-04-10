@@ -7337,6 +7337,7 @@ body {
   }
 }
 .hero h1 {
+  color: #fff;
   font-family: "NHaasGroteskDSW02-Bd", sans-serif;
   font-size: 36px;
   letter-spacing: 1px;
@@ -7353,6 +7354,9 @@ body {
     font-size: 60px;
     line-height: 64px;
   }
+}
+.hero h3 {
+  color: #fff;
 }
 .hero p {
   font-family: "NHaasGroteskDSW02-45Lt", sans-serif;
@@ -7614,18 +7618,18 @@ section {
   height: 100%;
 }
 
-.fellows .name {
+#fellows .name {
   font-size: 1em;
   padding-top: 20px;
   line-height: 18px;
 }
-.fellows .title {
+#fellows .title {
   font-size: 0.875em;
   /* 14/16 */
   line-height: 18px;
   margin-bottom: 40px;
 }
-.fellows .fellow-image {
+#fellows .fellow-image {
   max-width: 175px;
   margin: 0 auto;
 }
@@ -7815,7 +7819,7 @@ section {
   background-color: #264c72;
 }
 
-.impact-map .map-image {
+#about .impact-map .map-image {
   width: 100%;
   height: auto;
   position: relative;
@@ -7823,37 +7827,35 @@ section {
   z-index: -100;
   margin-bottom: -150px;
 }
-
-.partner-about .row {
+#about .partner-about .row {
   margin-bottom: 40px;
 }
-.partner-about .partner-logo {
+#about .partner-about .partner-logo {
   display: block;
   text-align: center;
   min-height: 100px;
 }
-.partner-about .partner-logo img {
+#about .partner-about .partner-logo img {
   max-width: 200px;
   max-height: 75px;
   margin: 0 auto;
 }
 
-.partner-section .partner-logo {
+#index .partner-section .partner-logo {
   max-width: 200px;
   max-height: 200px;
   margin: 20px auto;
 }
-.partner-section .partner-logo.bpeace {
+#index .partner-section .partner-logo.bpeace {
   max-height: 50px;
 }
-.partner-section .partner-logo.endeavor {
+#index .partner-section .partner-logo.endeavor {
   margin-top: 40px;
 }
-.partner-section .learn-more {
+#index .partner-section .learn-more {
   margin-top: 15px;
 }
-
-.home-hero {
+#index .home-hero {
   background-color: #eb4f53;
   display: table;
   min-height: 250px;
@@ -7862,31 +7864,31 @@ section {
   overflow: hidden;
 }
 @media only screen and (min-width: 650px) {
-  .home-hero {
+  #index .home-hero {
     min-height: 325px;
   }
 }
 @media only screen and (min-width: 768px) {
-  .home-hero {
+  #index .home-hero {
     min-height: 400px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .home-hero {
+  #index .home-hero {
     min-height: 475px;
   }
 }
-.home-hero .text-outer {
+#index .home-hero .text-outer {
   display: table-row;
 }
-.home-hero .text-inner {
+#index .home-hero .text-inner {
   display: table-cell;
   vertical-align: middle;
   position: relative;
 }
-.home-hero.mini-hero {
+#index .home-hero.mini-hero {
   min-height: 300px;
 }
-.home-hero.mini-hero h1 {
+#index .home-hero.mini-hero h1 {
   font-size: 36px;
 }
