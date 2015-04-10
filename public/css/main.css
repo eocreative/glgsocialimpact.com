@@ -7826,4 +7826,17 @@ section {
   position: relative;
   top: -150px;
   z-index: -100;
+  margin-bottom: -150px;
+}
+
+.partner-logo {
+  max-width: 200px;
+  max-height: 200px;
+  margin: 20px auto;
+}
+.partner-logo.bpeace {
+  max-height: 50px;
+}
+.partner-logo.endeavor {
+  margin-top: 40px;
 }

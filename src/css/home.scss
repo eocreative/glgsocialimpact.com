@@ -1,0 +1,11 @@
+.partner-logo{
+  max-width: 200px;
+  max-height: 200px;
+  margin: 20px auto;
+  &.bpeace{
+    max-height: 50px;
+  }
+  &.endeavor{
+    margin-top: 40px;
+  }
+}
