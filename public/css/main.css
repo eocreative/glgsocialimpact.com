@@ -7635,6 +7635,10 @@ section {
   margin: 0 auto;
 }
 
+.small-fellows .fellow-thumb {
+  max-width: 60px;
+}
+
 .fellow-detail .focus-area {
   color: #fff;
   display: inline-block;
@@ -7814,4 +7818,12 @@ section {
 }
 .ventureamerica .focus-area {
   background-color: #264c72;
+}
+
+.impact-map .map-image {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: -150px;
+  z-index: -100;
 }
