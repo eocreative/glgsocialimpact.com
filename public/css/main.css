@@ -7892,3 +7892,15 @@ section {
 #index .home-hero.mini-hero h1 {
   font-size: 36px;
 }
+
+.blog-iframe {
+  height: 1300px;
+  margin-bottom: -47px;
+  background: #fff;
+}
+
+.blog-iframe iframe {
+  margin-top: -50px;
+  height: 100%;
+  background: #fff;
+}
