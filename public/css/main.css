@@ -7876,6 +7876,11 @@ section {
   background-color: #264c72;
 }
 
+#about .about-social-impact {
+  position: relative;
+  top: -300px;
+  margin-bottom: -300px;
+}
 #about .impact-map .map-image {
   width: 100%;
   height: auto;
