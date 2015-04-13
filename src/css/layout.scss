@@ -1,5 +1,5 @@
 body{
-  margin-top: 65px;
+  margin-top: 70px;
 }
 
 .btn-brand{
@@ -17,6 +17,7 @@ body{
   width: 100%;
   background-repeat: no-repeat !important;
   overflow: hidden;
+  position: relative;
   @include breakp($bp-small-plus){
     min-height: 325px;
   }
@@ -43,8 +44,10 @@ body{
   }
   h3{
     color: #fff;
+    font-family: $medium-light-font;
   }
   p{
+    color: #fff;
     font-family: $medium-font;
     font-size: 16px;
     letter-spacing: 1px;
@@ -52,13 +55,26 @@ body{
       font-size: 20px;
     }
   }
+  .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #eb4f53;
+    @include opacity(.8);
+    z-index: 0;
+  }
+
   .text-outer{
     display: table-row;
+
   }
   .text-inner{
     display: table-cell;
     vertical-align: middle;
     position: relative;
+    z-index: 1;
   }
   &.mini-hero{
     min-height: 300px;

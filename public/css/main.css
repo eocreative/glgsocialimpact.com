@@ -7359,7 +7359,7 @@ select.form-control {
 }
 
 body {
-  margin-top: 65px;
+  margin-top: 70px;
 }
 
 .btn-brand {
@@ -7377,6 +7377,7 @@ body {
   width: 100%;
   background-repeat: no-repeat !important;
   overflow: hidden;
+  position: relative;
 }
 @media only screen and (min-width: 650px) {
   .hero {
@@ -7414,8 +7415,10 @@ body {
 }
 .hero h3 {
   color: #fff;
+  font-family: "NHaasGroteskDSW02-35XLt", sans-serif;
 }
 .hero p {
+  color: #fff;
   font-family: "NHaasGroteskDSW02-45Lt", sans-serif;
   font-size: 16px;
   letter-spacing: 1px;
@@ -7425,6 +7428,17 @@ body {
     font-size: 20px;
   }
 }
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #eb4f53;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  z-index: 0;
+}
 .hero .text-outer {
   display: table-row;
 }
@@ -7432,6 +7446,7 @@ body {
   display: table-cell;
   vertical-align: middle;
   position: relative;
+  z-index: 1;
 }
 .hero.mini-hero {
   min-height: 300px;
@@ -7675,6 +7690,14 @@ section {
   height: 100%;
 }
 
+#fellows .hero {
+  background-image: url(/img/banners/fellows.jpg);
+  background-position: center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 #fellows .name {
   font-size: 1em;
   padding-top: 20px;
@@ -7881,6 +7904,14 @@ section {
   top: -300px;
   margin-bottom: -300px;
 }
+#about .hero {
+  background-image: url(/img/banners/about.jpg);
+  background-position: center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 #about .impact-map .map-image {
   width: 100%;
   height: auto;
@@ -7965,4 +7996,13 @@ section {
   margin-top: -50px;
   height: 100%;
   background: #fff;
+}
+
+#contact .hero {
+  background-image: url(/img/banners/contact.jpg);
+  background-position: center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }

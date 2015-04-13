@@ -1,0 +1,7 @@
+#contact{
+  .hero{
+    background-image: url(/img/banners/contact.jpg);
+    background-position: center top;
+    @include backgroundCover();
+  }
+}

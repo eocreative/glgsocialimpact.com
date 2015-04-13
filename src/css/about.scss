@@ -4,6 +4,11 @@
     top: -300px;
     margin-bottom: -300px;
   }
+  .hero{
+    background-image: url(/img/banners/about.jpg);
+    background-position: center top;
+    @include backgroundCover();
+  }
   .impact-map{
     .map-image{
       width: 100%;
