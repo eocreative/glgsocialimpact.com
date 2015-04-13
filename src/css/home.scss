@@ -46,4 +46,36 @@
       h1{font-size: 36px;}
     }
   }
+  .quote-section{
+    background-color: $brand-color; 
+    h2{
+      color: #fff;
+    }
+  }
+  .bxslider{
+    padding: 0;
+    li{
+      width: auto !important;
+    }
+    .quote {
+      font-family: $medium-light-font;
+      color: #fff;
+    }
+    .quote-name {
+      font-family: $medium-light-font;
+      font-size: 20px;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: #fff;
+    }
+  }
+  .bx-viewport {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    min-height: 170px;
+    background: transparent;
+    border: 0px solid transparent;
+  }
+
 }

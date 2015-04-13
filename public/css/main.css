@@ -7985,6 +7985,37 @@ section {
 #index .home-hero.mini-hero h1 {
   font-size: 36px;
 }
+#index .quote-section {
+  background-color: #eb4f53;
+}
+#index .quote-section h2 {
+  color: #fff;
+}
+#index .bxslider {
+  padding: 0;
+}
+#index .bxslider li {
+  width: auto !important;
+}
+#index .bxslider .quote {
+  font-family: "NHaasGroteskDSW02-35XLt", sans-serif;
+  color: #fff;
+}
+#index .bxslider .quote-name {
+  font-family: "NHaasGroteskDSW02-35XLt", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #fff;
+}
+#index .bx-viewport {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  min-height: 170px;
+  background: transparent;
+  border: 0px solid transparent;
+}
 
 .blog-iframe {
   height: 1300px;
