@@ -7371,7 +7371,6 @@ body {
 }
 
 .hero {
-  background-color: #eb4f53;
   display: table;
   min-height: 250px;
   width: 100%;
@@ -7495,6 +7494,16 @@ nav .btn-login {
   margin-left: 14px;
   background-color: transparent;
   outline: none !important;
+}
+@media only screen and (min-width: 768px) {
+  nav .btn-login .hide-sm {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) {
+  nav .btn-login .hide-sm {
+    display: inline-block;
+  }
 }
 nav.navbar-default {
   background: #fff;
@@ -8024,15 +8033,9 @@ section {
   line-height: 1.6;
 }
 #index .home-hero .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
   background-color: #000;
-  opacity: 0.6;
-  filter: alpha(opacity=60);
-  z-index: 0;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
 }
 #index .quote-section {
   background-color: #eb4f53;

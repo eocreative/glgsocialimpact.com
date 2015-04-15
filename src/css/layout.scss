@@ -11,7 +11,6 @@ body{
 }
 
 .hero{
-  background-color: $brand-color; 
   display: table;
   min-height: 250px;
   width: 100%;
@@ -121,6 +120,14 @@ nav {
     margin-left: 14px;
     background-color: transparent;
     outline: none !important;
+    .hide-sm{
+      @include breakp($bp-medium){
+        display: none;
+      }
+      @include breakp($bp-large){
+        display: inline-block;
+      }
+    }
   }
   &.navbar-default {
     background: #fff;
