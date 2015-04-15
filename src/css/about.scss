@@ -1,8 +1,10 @@
 #about{
   .about-social-impact{
     position: relative;
-    top: -300px;
-    margin-bottom: -300px;
+    @include breakp($bp-large){
+      top: -300px;
+      margin-bottom: -300px;
+    }
   }
   .hero{
     background-image: url(/img/banners/about.jpg);
@@ -10,13 +12,58 @@
     @include backgroundCover();
   }
   .impact-map{
+    position: relative;
+    top: -150px;
+    margin-bottom: -150px;
     .map-image{
       width: 100%;
       height: auto;
       position: relative;
-      top: -150px;
       z-index: -100;
-      margin-bottom: -150px;
+    }
+    .circle{
+      background-color: $brand-color;
+      position: absolute;
+      border-radius: 50%;
+      @include opacity(.85);
+      // SMALL
+      // margin-left: -20px;
+      // width: 40px;
+      // height: 40px;
+      
+      // MEDIUM
+      margin-left: -37.5px;
+      width: 75px;
+      height: 75px;
+
+      // LARGE
+      // margin-left: -100px;
+      // width: 200px;
+      // height: 200px;
+    }
+    .crea{
+      top: 50%;
+      left: 20%;
+    }
+    .city-health-works{
+      top: 38%;
+      left: 26%;
+    }
+    .east-bali-cashews{
+      top: 64%;
+      left: 78%;
+    }
+    .nuru{
+      top: 61%;
+      left: 56%;
+    }
+    .resolution{
+      top: 54%;
+      left: 67.5%;
+    }
+    .spirit-america{
+      top: 42%;
+      left: 14%;
     }
   }
   .partner-about{
