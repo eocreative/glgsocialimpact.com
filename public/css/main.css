@@ -7286,6 +7286,27 @@ h5 {
   font-size: 18px;
 }
 
+.glg-icon {
+  /*font-family: 'GLG-icons';*/
+  font-family: 'GLG_PD_131126';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  display: inline-block;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+  vertical-align: middle;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.glg-icon.logo {
+  vertical-align: baseline;
+  position: relative;
+  bottom: 4px;
+}
+
 p.subhead {
   color: #5b5b5b;
   font-family: "NHaasGroteskDSW02-35XLt", sans-serif;
@@ -7630,9 +7651,12 @@ footer {
   color: #fff;
   font-size: .9em;
 }
-footer li {
-  padding-top: .1px;
-  padding-bottom: .1px;
+footer a {
+  color: #fff;
+  margin-right: 10px;
+}
+footer .terms {
+  color: #444;
 }
 footer .titles {
   font-size: 14px;
@@ -7640,20 +7664,6 @@ footer .titles {
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-bottom: 5px;
-}
-footer .address, footer .telephone, footer .email {
-  margin-bottom: 5px;
-}
-footer .social-icons i {
-  margin-top: 5px;
-  margin-right: 5px;
-  color: #fff;
-}
-footer .icon-glassdoor {
-  width: 12px;
-  height: auto;
-  position: relative;
-  top: -1px;
 }
 footer .logo {
   color: #fff;
@@ -7665,10 +7675,6 @@ footer .logo i {
 }
 footer .logo:hover {
   text-decoration: none;
-}
-footer .terms {
-  display: block;
-  color: #444444;
 }
 
 .center-block {

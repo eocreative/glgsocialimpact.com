@@ -260,9 +260,12 @@ footer {
   background: #000;
   color: #fff;
   font-size: .9em;
-  li {
-    padding-top: .1px;
-    padding-bottom: .1px;
+  a{
+    color: #fff;
+    margin-right: 10px;
+  }
+  .terms{
+    color: #444;
   }
   .titles {
     font-size: 14px;
@@ -270,20 +273,6 @@ footer {
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-bottom: 5px;
-  }
-  .address, .telephone, .email {
-    margin-bottom: 5px;
-  }
-  .social-icons i {
-    margin-top: 5px;
-    margin-right: 5px;
-    color: #fff;
-  }
-  .icon-glassdoor {
-    width: 12px;
-    height: auto;
-    position: relative;
-    top: -1px;
   }
   .logo {
     color: #fff;
@@ -295,10 +284,6 @@ footer {
     &:hover {
       text-decoration: none;
     }
-  }
-  .terms {
-    display: block;
-    color: #444444;
   }
 }
 
