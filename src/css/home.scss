@@ -24,18 +24,9 @@
     }
   }
   .home-hero{
-    background-image: url(/img/banners/about.jpg);
+    background-image: url(/img/banners/home.jpg);
     background-position: center top;
     @include backgroundCover();
-    @include breakp($bp-small-plus){
-      min-height: 325px;
-    }
-    @include breakp($bp-medium){
-      min-height: 400px;
-    }
-    @include breakp($bp-large){
-      min-height: 475px;
-    }
     h1{
       font-size: 34px;
       line-height: 1.6;

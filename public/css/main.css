@@ -7391,7 +7391,7 @@ body {
 }
 @media only screen and (min-width: 992px) {
   .hero {
-    min-height: 475px;
+    min-height: 500px;
   }
 }
 .hero h1 {
@@ -8007,27 +8007,12 @@ section {
   line-height: 205px;
 }
 #index .home-hero {
-  background-image: url(/img/banners/about.jpg);
+  background-image: url(/img/banners/home.jpg);
   background-position: center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-@media only screen and (min-width: 650px) {
-  #index .home-hero {
-    min-height: 325px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  #index .home-hero {
-    min-height: 400px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  #index .home-hero {
-    min-height: 475px;
-  }
 }
 #index .home-hero h1 {
   font-size: 34px;
