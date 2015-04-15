@@ -15,14 +15,6 @@
       margin-top: 15px;
     }
   }
-  .quote-wrapper{
-    height: 100px;
-    overflow: hidden;
-    .quote-mark{
-      font-size: 200px;
-      line-height: 205px;
-    }
-  }
   .home-hero{
     background-image: url(/img/banners/home.jpg);
     background-position: center top;
@@ -37,15 +29,47 @@
       line-height: 1.6;
     }
     .overlay{
-      background-color: #000;
-      @include opacity(.3);
+      // background-color: #000;
+      // @include opacity(.3);
+    }
+    .btn-apply{
+      background-color: #fff;
+      color: $brand-color !important;
+      padding-top: 13px;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-right: 5px;
+
+    }
+    .btn-learn{
+      background-color: transparent;
+      border: 1px solid #fff;
+      padding-top: 13px;
+      padding-left: 20px;
+      padding-right: 20px;
+      color: #fff;
     }
     
   }
+  .long-dash{
+    width: 30px;
+    height: 1px;
+    border-bottom: 1px solid #999;
+    margin: 28px auto 40px;
+  }
   .quote-section{
-    background-color: $brand-color; 
+    background-color: $light-color-bg;
     h2{
-      color: #fff;
+      color: #444;
+    }
+  }
+  .quote-wrapper{
+    height: 100px;
+    overflow: hidden;
+    .quote-mark{
+      font-size: 200px;
+      line-height: 205px;
+      color: $brand-color;
     }
   }
   .bxslider{
@@ -55,14 +79,14 @@
     }
     .quote {
       font-family: $medium-light-font;
-      color: #fff;
+      color: #777;
       font-size: 26px;
     }
     .quote-name {
       font-family: $medium-light-font;
       font-size: 16px;
       line-height: 20px;
-      color: #fff;
+      color: #777;
       letter-spacing: 1.5px;
     }
   }

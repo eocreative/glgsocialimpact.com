@@ -7650,6 +7650,7 @@ footer {
   background: #000;
   color: #fff;
   font-size: .9em;
+  letter-spacing: 1px;
 }
 footer a {
   color: #fff;
@@ -8013,14 +8014,6 @@ section {
 #index .partner-section .learn-more {
   margin-top: 15px;
 }
-#index .quote-wrapper {
-  height: 100px;
-  overflow: hidden;
-}
-#index .quote-wrapper .quote-mark {
-  font-size: 200px;
-  line-height: 205px;
-}
 #index .home-hero {
   background-image: url(/img/banners/home.jpg);
   background-position: center top;
@@ -8038,16 +8031,42 @@ section {
   font-size: 30px;
   line-height: 1.6;
 }
-#index .home-hero .overlay {
-  background-color: #000;
-  opacity: 0.3;
-  filter: alpha(opacity=30);
+#index .home-hero .btn-apply {
+  background-color: #fff;
+  color: #eb4f53 !important;
+  padding-top: 13px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 5px;
+}
+#index .home-hero .btn-learn {
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding-top: 13px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #fff;
+}
+#index .long-dash {
+  width: 30px;
+  height: 1px;
+  border-bottom: 1px solid #999;
+  margin: 28px auto 40px;
 }
 #index .quote-section {
-  background-color: #eb4f53;
+  background-color: #f7f7f7;
 }
 #index .quote-section h2 {
-  color: #fff;
+  color: #444;
+}
+#index .quote-wrapper {
+  height: 100px;
+  overflow: hidden;
+}
+#index .quote-wrapper .quote-mark {
+  font-size: 200px;
+  line-height: 205px;
+  color: #eb4f53;
 }
 #index .bxslider {
   padding: 0;
@@ -8057,14 +8076,14 @@ section {
 }
 #index .bxslider .quote {
   font-family: "NHaasGroteskDSW02-35XLt", sans-serif;
-  color: #fff;
+  color: #777;
   font-size: 26px;
 }
 #index .bxslider .quote-name {
   font-family: "NHaasGroteskDSW02-35XLt", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  color: #fff;
+  color: #777;
   letter-spacing: 1.5px;
 }
 #index .bx-viewport {
