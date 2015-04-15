@@ -7713,6 +7713,10 @@ section {
   max-width: 175px;
   margin: 0 auto;
 }
+#fellows .what-we-look-for .icon {
+  max-width: 125px;
+  margin: 10px auto;
+}
 
 .small-fellows .fellow-thumb {
   max-width: 60px;
@@ -7928,7 +7932,6 @@ section {
   z-index: -100;
 }
 #about .impact-map .circle {
-  background-color: #eb4f53;
   position: absolute;
   border-radius: 50%;
   opacity: 0.85;
@@ -7938,26 +7941,32 @@ section {
   height: 75px;
 }
 #about .impact-map .crea {
+  background-color: #b03090;
   top: 50%;
   left: 20%;
 }
 #about .impact-map .city-health-works {
+  background-color: #4dc2c3;
   top: 38%;
   left: 26%;
 }
 #about .impact-map .east-bali-cashews {
+  background-color: #8f6c5d;
   top: 64%;
   left: 78%;
 }
 #about .impact-map .nuru {
+  background-color: #f59222;
   top: 61%;
   left: 56%;
 }
 #about .impact-map .resolution {
+  background-color: #717275;
   top: 54%;
   left: 67.5%;
 }
 #about .impact-map .spirit-america {
+  background-color: #eb4f53;
   top: 42%;
   left: 14%;
 }
