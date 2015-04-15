@@ -7908,8 +7908,8 @@ section {
 }
 @media only screen and (min-width: 992px) {
   #about .about-social-impact {
-    top: -300px;
-    margin-bottom: -300px;
+    top: -250px;
+    margin-bottom: -250px;
   }
 }
 #about .hero {
