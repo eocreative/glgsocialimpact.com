@@ -7998,13 +7998,21 @@ section {
 #index .partner-section .learn-more {
   margin-top: 15px;
 }
-#index .home-hero {
-  background-color: #eb4f53;
-  display: table;
-  min-height: 250px;
-  width: 100%;
-  background-repeat: no-repeat !important;
+#index .quote-wrapper {
+  height: 100px;
   overflow: hidden;
+}
+#index .quote-wrapper .quote-mark {
+  font-size: 200px;
+  line-height: 205px;
+}
+#index .home-hero {
+  background-image: url(/img/banners/about.jpg);
+  background-position: center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 @media only screen and (min-width: 650px) {
   #index .home-hero {
@@ -8021,19 +8029,25 @@ section {
     min-height: 475px;
   }
 }
-#index .home-hero .text-outer {
-  display: table-row;
+#index .home-hero h1 {
+  font-size: 34px;
+  line-height: 1.6;
 }
-#index .home-hero .text-inner {
-  display: table-cell;
-  vertical-align: middle;
-  position: relative;
+#index .home-hero h2 {
+  color: #fff;
+  font-size: 30px;
+  line-height: 1.6;
 }
-#index .home-hero.mini-hero {
-  min-height: 300px;
-}
-#index .home-hero.mini-hero h1 {
-  font-size: 36px;
+#index .home-hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #000;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  z-index: 0;
 }
 #index .quote-section {
   background-color: #eb4f53;
@@ -8050,13 +8064,14 @@ section {
 #index .bxslider .quote {
   font-family: "NHaasGroteskDSW02-35XLt", sans-serif;
   color: #fff;
+  font-size: 26px;
 }
 #index .bxslider .quote-name {
   font-family: "NHaasGroteskDSW02-35XLt", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 20px;
-  text-transform: uppercase;
   color: #fff;
+  letter-spacing: 1.5px;
 }
 #index .bx-viewport {
   -moz-box-shadow: none !important;

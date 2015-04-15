@@ -15,14 +15,18 @@
       margin-top: 15px;
     }
   }
-
-  .home-hero{
-    background-color: $brand-color; 
-    display: table;
-    min-height: 250px;
-    width: 100%;
-    background-repeat: no-repeat !important;
+  .quote-wrapper{
+    height: 100px;
     overflow: hidden;
+    .quote-mark{
+      font-size: 200px;
+      line-height: 205px;
+    }
+  }
+  .home-hero{
+    background-image: url(/img/banners/about.jpg);
+    background-position: center top;
+    @include backgroundCover();
     @include breakp($bp-small-plus){
       min-height: 325px;
     }
@@ -32,19 +36,26 @@
     @include breakp($bp-large){
       min-height: 475px;
     }
+    h1{
+      font-size: 34px;
+      line-height: 1.6;
+    }
+    h2{
+      color: #fff;
+      font-size: 30px;
+      line-height: 1.6;
+    }
+    .overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: #000;
+      @include opacity(.6);
+      z-index: 0;
+    }
     
-    .text-outer{
-      display: table-row;
-    }
-    .text-inner{
-      display: table-cell;
-      vertical-align: middle;
-      position: relative;
-    }
-    &.mini-hero{
-      min-height: 300px;
-      h1{font-size: 36px;}
-    }
   }
   .quote-section{
     background-color: $brand-color; 
@@ -60,13 +71,14 @@
     .quote {
       font-family: $medium-light-font;
       color: #fff;
+      font-size: 26px;
     }
     .quote-name {
       font-family: $medium-light-font;
-      font-size: 20px;
+      font-size: 16px;
       line-height: 20px;
-      text-transform: uppercase;
       color: #fff;
+      letter-spacing: 1.5px;
     }
   }
   .bx-viewport {
