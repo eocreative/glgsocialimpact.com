@@ -8000,6 +8000,32 @@ section {
   margin: 0 auto;
 }
 
+#index .slide-show {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-image: url(/img/banners/home-1.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#index .slide-show .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
 #index .partner-section .partner-logo {
   max-width: 200px;
   max-height: 200px;
@@ -8015,7 +8041,6 @@ section {
   margin-top: 15px;
 }
 #index .home-hero {
-  background-image: url(/img/banners/home.jpg);
   background-position: center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;

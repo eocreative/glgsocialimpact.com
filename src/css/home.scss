@@ -1,4 +1,25 @@
 #index{
+  //slideshow styles
+  .slide-show{
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-image: url(/img/banners/home-1.jpg);
+    @include backgroundCover();
+    .slide{
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      @include backgroundCover();
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+  }
   .partner-section{
     .partner-logo{
       max-width: 200px;
@@ -16,7 +37,7 @@
     }
   }
   .home-hero{
-    background-image: url(/img/banners/home.jpg);
+    // background-image: url(/img/banners/home.jpg);
     background-position: center top;
     @include backgroundCover();
     h1{
