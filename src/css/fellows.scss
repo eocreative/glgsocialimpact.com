@@ -12,7 +12,6 @@
   .title{
     font-size: 0.875em; /* 14/16 */
     line-height: 18px;
-    margin-bottom: 40px;
   }
   .fellow-image{
     max-width: 175px;
@@ -24,6 +23,50 @@
       margin: 10px auto;
     }
   }
+  .fellow-block{
+    padding: 20px;
+    border: 1px solid $light-color-bg;
+    margin-bottom: 20px;
+    min-height: 325px;
+    @include  borderRadius(5px);
+  }
+  .all-star-code{
+    border-bottom: 5px solid $allstarcode;
+  }
+  .agora{
+    border-bottom: 5px solid $agora;
+  }
+  .stbernard{
+    border-bottom: 5px solid $stbernard;
+  }
+  .catchafire{
+    border-bottom: 5px solid $catchafire;
+  }
+  .crea{
+    border-bottom: 5px solid $crea;
+  }
+  .city-health-works{
+    border-bottom: 5px solid $cityhealthworks;
+  }
+  .east-bali-cashews{
+    border-bottom: 5px solid $eastbalicashews;
+  }
+  .nuru{
+    border-bottom: 5px solid $nuru;
+  }
+  .resolution{
+    border-bottom: 5px solid $resolution;
+  }
+  .samasource{
+    border-bottom: 5px solid $samasource;
+  }
+  .spark-mettle{
+    border-bottom: 5px solid $sparkmettle;
+  }
+  .venture-america{
+    border-bottom: 5px solid $ventureamerica;
+  }
+    
 }
 
 .small-fellows{

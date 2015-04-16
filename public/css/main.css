@@ -7863,7 +7863,6 @@ section {
   font-size: 0.875em;
   /* 14/16 */
   line-height: 18px;
-  margin-bottom: 40px;
 }
 #fellows .fellow-image {
   max-width: 175px;
@@ -7872,6 +7871,56 @@ section {
 #fellows .what-we-look-for .icon {
   max-width: 125px;
   margin: 10px auto;
+}
+#fellows .fellow-block {
+  padding: 20px;
+  border: 1px solid #f7f7f7;
+  margin-bottom: 20px;
+  min-height: 325px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+#fellows .all-star-code {
+  border-bottom: 5px solid #0078bd;
+}
+#fellows .agora {
+  border-bottom: 5px solid #8eb947;
+}
+#fellows .stbernard {
+  border-bottom: 5px solid #0055a6;
+}
+#fellows .catchafire {
+  border-bottom: 5px solid #e13d25;
+}
+#fellows .crea {
+  border-bottom: 5px solid #b03090;
+}
+#fellows .city-health-works {
+  border-bottom: 5px solid #4dc2c3;
+}
+#fellows .east-bali-cashews {
+  border-bottom: 5px solid #8f6c5d;
+}
+#fellows .nuru {
+  border-bottom: 5px solid #f59222;
+}
+#fellows .resolution {
+  border-bottom: 5px solid #717275;
+}
+#fellows .samasource {
+  border-bottom: 5px solid #f6ce17;
+}
+#fellows .spark-mettle {
+  border-bottom: 5px solid #e26523;
+}
+#fellows .venture-america {
+  border-bottom: 5px solid #264c72;
 }
 
 .small-fellows .fellow-thumb {
