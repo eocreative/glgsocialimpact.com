@@ -2,8 +2,8 @@
   .about-social-impact{
     position: relative;
     @include breakp($bp-large){
-      top: -250px;
-      margin-bottom: -250px;
+      top: -190px;
+      margin-bottom: -190px;
     }
   }
   .hero{
@@ -26,14 +26,14 @@
       border-radius: 50%;
       @include opacity(.85);
       // SMALL
-      // margin-left: -20px;
-      // width: 40px;
-      // height: 40px;
+      margin-left: -20px;
+      width: 40px;
+      height: 40px;
       
       // MEDIUM
-      margin-left: -37.5px;
-      width: 75px;
-      height: 75px;
+      // margin-left: -37.5px;
+      // width: 75px;
+      // height: 75px;
 
       // LARGE
       // margin-left: -100px;

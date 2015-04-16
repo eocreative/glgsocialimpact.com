@@ -8113,8 +8113,8 @@ section {
 }
 @media only screen and (min-width: 992px) {
   #about .about-social-impact {
-    top: -250px;
-    margin-bottom: -250px;
+    top: -190px;
+    margin-bottom: -190px;
   }
 }
 #about .hero {
@@ -8141,9 +8141,9 @@ section {
   border-radius: 50%;
   opacity: 0.85;
   filter: alpha(opacity=85);
-  margin-left: -37.5px;
-  width: 75px;
-  height: 75px;
+  margin-left: -20px;
+  width: 40px;
+  height: 40px;
 }
 #about .impact-map .crea {
   background-color: #b03090;
