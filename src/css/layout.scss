@@ -302,6 +302,12 @@ section {
   padding: 90px 0;
 }
 
+.section-light{
+  background-color: $light-color-bg;
+  border-bottom: 1px solid $grey-color;
+  border-top: 1px solid $grey-color;
+}
+
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%;

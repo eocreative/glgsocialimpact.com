@@ -7490,11 +7490,14 @@ p.highlight {
 
 input[type=text].form-control,
 input[type=email].form-control,
-input[type=password].form-control {
+input[type=password].form-control,
+input[type=tel].form-control {
   border-color: #e7e7e7;
   box-shadow: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
+  height: 46px;
+  line-height: 46px;
 }
 
 input[type=password].form-control {
@@ -7832,6 +7835,12 @@ section {
   padding: 90px 0;
 }
 
+.section-light {
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #f2f2f2;
+  border-top: 1px solid #f2f2f2;
+}
+
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -7859,12 +7868,19 @@ section {
   padding-top: 20px;
   line-height: 18px;
 }
+#fellows .name a {
+  font-family: "NHaasGroteskDSW02-Bd", sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
 #fellows .title {
-  font-size: 0.875em;
-  /* 14/16 */
+  font-size: 0.75em;
+  /* 12/16 */
   line-height: 18px;
+  color: #777;
 }
 #fellows .fellow-image {
+  width: 80%;
   max-width: 175px;
   margin: 0 auto;
 }
@@ -7874,9 +7890,9 @@ section {
 }
 #fellows .fellow-block {
   padding: 20px;
-  border: 1px solid #f7f7f7;
+  background-color: #fff;
+  border: 1px solid #f2f2f2;
   margin-bottom: 20px;
-  min-height: 325px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -7885,42 +7901,62 @@ section {
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
+  min-height: 305px;
 }
-#fellows .all-star-code {
-  border-bottom: 5px solid #0078bd;
+@media only screen and (min-width: 480px) {
+  #fellows .fellow-block {
+    min-height: 320px;
+  }
 }
-#fellows .agora {
-  border-bottom: 5px solid #8eb947;
+@media only screen and (min-width: 650px) {
+  #fellows .fellow-block {
+    min-height: 320px;
+  }
 }
-#fellows .stbernard {
-  border-bottom: 5px solid #0055a6;
+@media only screen and (min-width: 1200px) {
+  #fellows .fellow-block {
+    min-height: 325px;
+  }
 }
-#fellows .catchafire {
-  border-bottom: 5px solid #e13d25;
+#fellows .col-md-3 {
+  padding-left: 8px;
+  padding-right: 8px;
 }
-#fellows .crea {
-  border-bottom: 5px solid #b03090;
+#fellows .all-star-code a {
+  color: #0078bd;
 }
-#fellows .city-health-works {
-  border-bottom: 5px solid #4dc2c3;
+#fellows .agora a {
+  color: #8eb947;
 }
-#fellows .east-bali-cashews {
-  border-bottom: 5px solid #8f6c5d;
+#fellows .stbernard a {
+  color: #0055a6;
 }
-#fellows .nuru {
-  border-bottom: 5px solid #f59222;
+#fellows .catchafire a {
+  color: #e13d25;
 }
-#fellows .resolution {
-  border-bottom: 5px solid #717275;
+#fellows .crea a {
+  color: #b03090;
 }
-#fellows .samasource {
-  border-bottom: 5px solid #f6ce17;
+#fellows .city-health-works a {
+  color: #4dc2c3;
 }
-#fellows .spark-mettle {
-  border-bottom: 5px solid #e26523;
+#fellows .east-bali-cashews a {
+  color: #8f6c5d;
 }
-#fellows .venture-america {
-  border-bottom: 5px solid #264c72;
+#fellows .nuru a {
+  color: #f59222;
+}
+#fellows .resolution a {
+  color: #717275;
+}
+#fellows .samasource a {
+  color: #f6ce17;
+}
+#fellows .spark-mettle a {
+  color: #e26523;
+}
+#fellows .venture-america a {
+  color: #264c72;
 }
 
 .small-fellows .fellow-thumb {

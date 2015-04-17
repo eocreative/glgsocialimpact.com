@@ -8,12 +8,19 @@
     font-size: 1em;
     padding-top: 20px;
     line-height: 18px;
+    a{
+      font-family: "NHaasGroteskDSW02-Bd", sans-serif;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
   }
   .title{
-    font-size: 0.875em; /* 14/16 */
+    font-size: 0.75em; /* 12/16 */
     line-height: 18px;
+    color: #777;
   }
   .fellow-image{
+    width: 80%;
     max-width: 175px;
     margin: 0 auto;
   }
@@ -25,46 +32,62 @@
   }
   .fellow-block{
     padding: 20px;
-    border: 1px solid $light-color-bg;
+    background-color: #fff;
+    border: 1px solid $grey-color;
     margin-bottom: 20px;
-    min-height: 325px;
     @include  borderRadius(5px);
+    min-height: 305px;
+    @include breakp($bp-small){
+      min-height: 320px;
+    }
+    @include breakp($bp-small-plus){
+      min-height: 320px;
+    }
+    @include breakp($bp-xlarge){
+      min-height: 325px;
+    }
   }
-  .all-star-code{
-    border-bottom: 5px solid $allstarcode;
+
+  // Adjust bootstrap margins for this section
+  .col-md-3{
+    padding-left: 8px;
+    padding-right: 8px;
   }
-  .agora{
-    border-bottom: 5px solid $agora;
+  .all-star-code a{
+    color: $allstarcode;
   }
-  .stbernard{
-    border-bottom: 5px solid $stbernard;
+  .agora a{
+    color: $agora;
   }
-  .catchafire{
-    border-bottom: 5px solid $catchafire;
+  .stbernard a{
+    color: $stbernard;
   }
-  .crea{
-    border-bottom: 5px solid $crea;
+  .catchafire a{
+    color: $catchafire;
   }
-  .city-health-works{
-    border-bottom: 5px solid $cityhealthworks;
+  .crea a{
+    color: $crea;
   }
-  .east-bali-cashews{
-    border-bottom: 5px solid $eastbalicashews;
+  .city-health-works a{
+    color: $cityhealthworks;
   }
-  .nuru{
-    border-bottom: 5px solid $nuru;
+  .east-bali-cashews a{
+    color: $eastbalicashews;
   }
-  .resolution{
-    border-bottom: 5px solid $resolution;
+  .nuru a{
+    color: $nuru;
   }
-  .samasource{
-    border-bottom: 5px solid $samasource;
+  .resolution a{
+    color: $resolution;
   }
-  .spark-mettle{
-    border-bottom: 5px solid $sparkmettle;
+  .samasource a{
+    color: $samasource;
   }
-  .venture-america{
-    border-bottom: 5px solid $ventureamerica;
+  .spark-mettle a{
+    color: $sparkmettle;
+  }
+  .venture-america a{
+    color: $ventureamerica;
   }
     
 }

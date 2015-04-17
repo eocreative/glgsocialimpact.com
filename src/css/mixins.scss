@@ -29,7 +29,6 @@ $bp-xlarge : 1200px;
     @media only screen and (min-width: $breaksize) { @content; }
 }
 
-
 // OPACITY
 @mixin opacity($opacity) {
   opacity: $opacity;

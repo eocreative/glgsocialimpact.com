@@ -34,11 +34,14 @@
 
 input[type=text].form-control,
 input[type=email].form-control,
-input[type=password].form-control{
+input[type=password].form-control,
+input[type=tel].form-control{
   border-color: #e7e7e7;;
   box-shadow: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
+  height: 46px;
+  line-height: 46px;
 }
 input[type=password].form-control{
   font:small-caption;
