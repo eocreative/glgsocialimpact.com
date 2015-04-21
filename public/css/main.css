@@ -8256,11 +8256,14 @@ section {
   max-height: 200px;
   margin: 20px auto;
 }
-#index .partner-section .partner-logo.bpeace {
-  max-height: 50px;
+#index .partner-section .partner-logo.square-logo {
+  max-height: 70px;
 }
 #index .partner-section .partner-logo.endeavor {
-  margin-top: 40px;
+  margin-top: 45px;
+}
+#index .partner-section .partner-logo.spirit-america {
+  margin-top: 30px;
 }
 #index .partner-section .learn-more {
   margin-top: 15px;
