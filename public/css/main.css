@@ -10558,12 +10558,19 @@ section {
 #about .case-studies .value-description p {
   color: #fbfbfb;
   padding: 20px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 1.5;
 }
 @media only screen and (min-width: 768px) {
   #about .case-studies .value-description p {
     color: #fff;
     padding: 15px 20px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #about .case-studies .value-description p {
+    font-size: 15px;
+    line-height: 1.4;
   }
 }
 #about .case-studies .value-column {
@@ -10592,7 +10599,7 @@ section {
 }
 @media only screen and (min-width: 768px) {
   #about .case-studies .value-title {
-    padding: 120px 0;
+    padding: 130px 0;
     background-position: center top;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -10602,7 +10609,7 @@ section {
 }
 @media only screen and (min-width: 992px) {
   #about .case-studies .value-title {
-    padding: 160px 0;
+    padding: 145px 0;
   }
 }
 @media only screen and (min-width: 1200px) {

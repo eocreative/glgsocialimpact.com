@@ -37,10 +37,16 @@
       p{
         color: #fbfbfb;
         padding: 20px;
-        line-height: 20px;
+        font-size: 14px;
+        line-height: 1.5;
         @include breakp($bp-medium){
           color: #fff;
           padding: 15px 20px;
+          
+        }
+        @include breakp($bp-xlarge){
+          font-size: 15px;
+          line-height: 1.4;
         }
       }
     }
@@ -67,12 +73,12 @@
         padding: 60px 0;
       }
       @include breakp($bp-medium){
-        padding: 120px 0;
+        padding: 130px 0;
         background-position: center top;
         @include backgroundCover();
       }
       @include breakp($bp-large){
-        padding: 160px 0;
+        padding: 145px 0;
       }
       @include breakp($bp-xlarge){
         padding: 175px 0;
