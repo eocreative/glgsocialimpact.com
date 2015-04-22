@@ -9815,13 +9815,14 @@ p.highlight {
   display: block;
   color: #aaa;
   font-size: 12px;
+  margin-top: 2px;
 }
 
 .control-label {
   padding-top: 5px;
   text-align: left !important;
   display: block;
-  margin-bottom: 5px !important;
+  margin-bottom: 7px !important;
   color: #5b5b5b;
   font-family: "NHaasGroteskDSW02-45Lt", sans-serif;
   font-size: 0.875em;
@@ -9854,10 +9855,6 @@ input[type=tel].form-control {
 input[type=password].form-control {
   font: small-caption;
   font-size: 18px;
-}
-
-label {
-  margin-bottom: 6px;
 }
 
 textarea.form-control {
