@@ -9894,6 +9894,7 @@ body {
 }
 .btn-brand:hover {
   color: #fff !important;
+  background-color: #e72a2f;
 }
 
 .hero {
@@ -9996,7 +9997,7 @@ nav .logo {
   max-width: 275px;
   padding: 8px;
 }
-nav .navbar-nav li > a, nav .btn-login {
+nav .navbar-nav li > a {
   font-size: 14px !important;
   font-family: "NHaasGroteskDSW02-Bd", sans-serif;
   letter-spacing: 1px;
@@ -10015,6 +10016,10 @@ nav .container {
   width: auto !important;
 }
 nav .btn-login {
+  font-size: 14px !important;
+  font-family: "NHaasGroteskDSW02-Bd", sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   margin-top: 2px;
   padding: 12px 15px 10px 15px;
   margin-left: 14px;
@@ -10524,9 +10529,6 @@ section {
   -o-background-size: cover;
   background-size: cover;
 }
-#about .examples {
-  color: #fff;
-}
 #about .impact-map {
   position: relative;
   top: -150px;
@@ -10603,7 +10605,7 @@ section {
 @media only screen and (min-width: 768px) {
   #about .case-studies .value-description p {
     color: #fff;
-    padding: 10px;
+    padding: 15px 20px;
   }
 }
 #about .case-studies .value-column {
@@ -10637,25 +10639,53 @@ section {
 }
 @media only screen and (min-width: 992px) {
   #about .case-studies .value-title {
-    padding: 135px 0;
+    padding: 160px 0;
   }
 }
 @media only screen and (min-width: 1200px) {
   #about .case-studies .value-title {
-    padding: 110px 0;
+    padding: 175px 0;
   }
-}
-#about .case-studies .value-title.Judgment {
-  background-position: center -300px;
 }
 #about .case-studies .value-label {
   background: #000;
   color: #fff;
+  padding: 40px 50px;
+}
+@media only screen and (min-width: 650px) {
+  #about .case-studies .value-label {
+    padding: 60px 20px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #about .case-studies .value-label {
+    padding: 23% 20px 0;
+    background-position: center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #about .case-studies .value-label {
+    padding: 140px 20px 0;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #about .case-studies .value-label {
+    padding: 150px 30px 90px;
+  }
+}
+#about .case-studies .value-label .case-studies {
   font-size: 18px;
   font-family: "NHaasGroteskDSW02-Bd", sans-serif;
   line-height: 1.4;
   letter-spacing: 1.2px;
   text-transform: uppercase;
+}
+#about .case-studies .value-label .examples {
+  display: block;
 }
 #about .case-studies .value-wrapper {
   cursor: pointer;

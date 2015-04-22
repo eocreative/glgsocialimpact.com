@@ -19,6 +19,7 @@ body{
   color: #fff !important;
   &:hover{
     color: #fff !important;
+    background-color: darken( $brand-color, 8% );
   }
 }
 
@@ -108,7 +109,7 @@ nav {
     max-width: 275px;
     padding: 8px;
   }
-  .navbar-nav li > a, .btn-login {
+  .navbar-nav li > a{
     font-size: 14px !important;
     font-family: "NHaasGroteskDSW02-Bd", sans-serif;
     letter-spacing: 1px;
@@ -127,6 +128,10 @@ nav {
     width: auto !important;
   }
   .btn-login {
+    font-size: 14px !important;
+    font-family: "NHaasGroteskDSW02-Bd", sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     margin-top: 2px;
     padding: 12px 15px 10px 15px;
     margin-left: 14px;

@@ -5,9 +5,6 @@
     background-position: center top;
     @include backgroundCover();
   }
-  .examples{
-    color: #fff;
-  }
   .impact-map{
     position: relative;
     top: -150px;
@@ -94,7 +91,7 @@
         line-height: 20px;
         @include breakp($bp-medium){
           color: #fff;
-          padding: 10px;
+          padding: 15px 20px;
         }
       }
     }
@@ -120,25 +117,41 @@
         @include backgroundCover();
       }
       @include breakp($bp-large){
-        padding: 135px 0;
+        padding: 160px 0;
       }
       @include breakp($bp-xlarge){
-        padding: 110px 0;
-      }
-      &.Judgment{
-        // Position judgement image differently for mobile
-        background-position: center -300px;
+        padding: 175px 0;
       }
     }
     // Box labeling section
     .value-label{
       background: #000;
       color: $light-color;
-      font-size: 18px;
-      font-family: "NHaasGroteskDSW02-Bd", sans-serif;
-      line-height: 1.4;
-      letter-spacing: 1.2px;
-      text-transform: uppercase;
+      padding: 40px 50px;
+      @include breakp($bp-small-plus){
+        padding: 60px 20px;
+      }
+      @include breakp($bp-medium){
+        padding: 23% 20px 0;
+        background-position: center top;
+        @include backgroundCover();
+      }
+      @include breakp($bp-large){
+        padding: 140px 20px 0;
+      }
+      @include breakp($bp-xlarge){
+        padding: 150px 30px 90px;
+      }
+      .case-studies{
+        font-size: 18px;
+        font-family: "NHaasGroteskDSW02-Bd", sans-serif;
+        line-height: 1.4;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+      }
+      .examples{
+        display: block;
+      }
     }
     .value-wrapper{
       cursor: pointer;
