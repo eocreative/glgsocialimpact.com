@@ -2,6 +2,13 @@
   margin-bottom: 10px;
 }
 
+.word-count{
+  display: block;
+  color: #aaa;
+  font-size: 12px;
+
+}
+
 .control-label{
   padding-top: 5px;
   text-align: left !important;
@@ -46,6 +53,9 @@ input[type=tel].form-control{
 input[type=password].form-control{
   font:small-caption;
   font-size:18px
+}
+label{
+  margin-bottom: 6px;
 }
 textarea.form-control{
   border-color: #e7e7e7;
