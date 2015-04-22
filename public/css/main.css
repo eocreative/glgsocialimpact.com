@@ -10600,7 +10600,6 @@ section {
 #about .case-studies .value-description p {
   color: #fbfbfb;
   padding: 20px;
-  font-size: 14px;
   line-height: 20px;
 }
 @media only screen and (min-width: 768px) {
@@ -10656,42 +10655,6 @@ section {
 #about .case-studies .value-label {
   background: #000;
   color: #fff;
-  padding: 40px 50px;
-}
-@media only screen and (min-width: 650px) {
-  #about .case-studies .value-label {
-    padding: 60px 20px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  #about .case-studies .value-label {
-    padding: 23% 20px 0;
-    background-position: center top;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-}
-@media only screen and (min-width: 992px) {
-  #about .case-studies .value-label {
-    padding: 140px 20px 0;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  #about .case-studies .value-label {
-    padding: 150px 30px 90px;
-  }
-}
-#about .case-studies .value-label .case-studies {
-  font-size: 18px;
-  font-family: "NHaasGroteskDSW02-Bd", sans-serif;
-  line-height: 1.4;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-}
-#about .case-studies .value-label .examples {
-  display: block;
 }
 #about .case-studies .value-wrapper {
   cursor: pointer;
