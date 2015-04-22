@@ -71,7 +71,7 @@ module.exports = function(grunt) {
         }
       },
       css: {
-        files: ['src/css/*.scss','src/css/bootstrap/*.scss'],
+        files: ['src/css/*.scss','src/css/bootstrap/*.scss', 'src/css/font-awesome/font-awesome.scss'],
         tasks: ['sass'],
         options: {
           livereload: true,

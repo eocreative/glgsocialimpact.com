@@ -22,12 +22,6 @@ body{
   }
 }
 
-.social-icons i{
-  margin-top: 5px;
-  margin-right:5px;
-  color: #fff;
-}
-
 .hero{
   display: table;
   min-height: 250px;
@@ -303,6 +297,11 @@ footer {
     &:hover {
       text-decoration: none;
     }
+  }
+  .social-icons i{
+    margin-top: 20px;
+    margin-right: 0px;
+    color: #fff;
   }
 }
 
