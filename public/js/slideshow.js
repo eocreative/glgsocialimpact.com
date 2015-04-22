@@ -21,7 +21,7 @@ jQuery(document).ready(function($) {
       $.each(slideImages, function(i, e){
         var slide = $('<div>');
         slide.addClass('slide').hide();
-        slide.css("backgroundImage", "url(/img/banners/" + e + ".jpg)");
+        slide.css("backgroundImage", "url(img/banners/" + e + ".jpg)");
         slideshowContainer.append(slide);
       });
     

@@ -1,7 +1,7 @@
 #about{
 
   .hero{
-    background-image: url(/img/banners/about.jpg);
+    background-image: url(../img/banners/about.jpg);
     background-position: center top;
     @include backgroundCover();
   }
@@ -114,25 +114,25 @@
       }
     }
     .crea{
-      background-image: url('/img/case-studies/crea.jpg')
+      background-image: url('../img/case-studies/crea.jpg')
     }
     .city-health-works{
-      background-image: url('/img/case-studies/city-health-works.jpg')
+      background-image: url('../img/case-studies/city-health-works.jpg')
     }
     .east-bali-cashews{
-      background-image: url('/img/case-studies/east-bali-cashews.jpg')
+      background-image: url('../img/case-studies/east-bali-cashews.jpg')
     }
     .global-village-fruit{
-      background-image: url('/img/case-studies/global-village-fruit.jpg')
+      background-image: url('../img/case-studies/global-village-fruit.jpg')
     }
     .nuru{
-      background-image: url('/img/case-studies/nuru.jpg')
+      background-image: url('../img/case-studies/nuru.jpg')
     }
     .spirit-america{
-      background-image: url('/img/case-studies/spirit-of-america.jpg')
+      background-image: url('../img/case-studies/spirit-of-america.jpg')
     }
     .bpeace{
-      background-image: url('/img/case-studies/bpeace-red.jpg')
+      background-image: url('../img/case-studies/bpeace-red.jpg')
     }
   }
 }
