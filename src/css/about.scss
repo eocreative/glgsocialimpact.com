@@ -5,66 +5,7 @@
     background-position: center top;
     @include backgroundCover();
   }
-  .impact-map{
-    position: relative;
-    top: -150px;
-    margin-bottom: -150px;
-    .map-image{
-      width: 100%;
-      height: auto;
-      position: relative;
-      z-index: -100;
-    }
-    .circle{
-      position: absolute;
-      border-radius: 50%;
-      @include opacity(.85);
-      // SMALL
-      margin-left: -20px;
-      width: 40px;
-      height: 40px;
-      
-      // MEDIUM
-      // margin-left: -37.5px;
-      // width: 75px;
-      // height: 75px;
 
-      // LARGE
-      // margin-left: -100px;
-      // width: 200px;
-      // height: 200px;
-    }
-    .crea{
-      background-color: $crea;
-      top: 50%;
-      left: 20%;
-    }
-    .city-health-works{
-      background-color: $cityhealthworks;
-      top: 38%;
-      left: 26%;
-    }
-    .east-bali-cashews{
-      background-color: $eastbalicashews;
-      top: 64%;
-      left: 78%;
-    }
-    .nuru{
-      background-color: $nuru;
-      top: 61%;
-      left: 56%;
-    }
-    .resolution{
-      background-color: $resolution;
-      top: 54%;
-      left: 67.5%;
-    }
-    .spirit-america{
-      background-color: $brand-color;
-      top: 42%;
-      left: 14%;
-    }
-  }
   .partner-about{
     .row{
       margin-bottom: 40px;
