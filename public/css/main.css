@@ -7534,6 +7534,12 @@ body {
   color: #fff !important;
 }
 
+.social-icons i {
+  margin-top: 5px;
+  margin-right: 5px;
+  color: #fff;
+}
+
 .hero {
   display: table;
   min-height: 250px;
@@ -8152,6 +8158,9 @@ section {
   -o-background-size: cover;
   background-size: cover;
 }
+#about .examples {
+  color: #fff;
+}
 #about .impact-map {
   position: relative;
   top: -150px;
@@ -8303,6 +8312,27 @@ section {
     display: none;
   }
 }
+#about .case-studies .crea {
+  background-image: url("/img/case-studies/crea.jpg");
+}
+#about .case-studies .city-health-works {
+  background-image: url("/img/case-studies/city-health-works.jpg");
+}
+#about .case-studies .east-bali-cashews {
+  background-image: url("/img/case-studies/east-bali-cashews.jpg");
+}
+#about .case-studies .global-village-fruit {
+  background-image: url("/img/case-studies/global-village-fruit.jpg");
+}
+#about .case-studies .nuru {
+  background-image: url("/img/case-studies/nuru.jpg");
+}
+#about .case-studies .spirit-america {
+  background-image: url("/img/case-studies/service.jpg");
+}
+#about .case-studies .bpeace {
+  background-image: url("/img/case-studies/integrity.jpg");
+}
 
 #index .slide-show {
   position: absolute;
@@ -8360,7 +8390,7 @@ section {
 }
 #index .home-hero h2 {
   color: #fff;
-  font-size: 30px;
+  font-size: 36px;
   line-height: 1.6;
 }
 #index .home-hero .btn-apply {

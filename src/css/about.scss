@@ -5,6 +5,9 @@
     background-position: center top;
     @include backgroundCover();
   }
+  .examples{
+    color: #fff;
+  }
   .impact-map{
     position: relative;
     top: -150px;
@@ -160,6 +163,27 @@
           display: none;
         }
       }
+    }
+    .crea{
+      background-image: url('/img/case-studies/crea.jpg')
+    }
+    .city-health-works{
+      background-image: url('/img/case-studies/city-health-works.jpg')
+    }
+    .east-bali-cashews{
+      background-image: url('/img/case-studies/east-bali-cashews.jpg')
+    }
+    .global-village-fruit{
+      background-image: url('/img/case-studies/global-village-fruit.jpg')
+    }
+    .nuru{
+      background-image: url('/img/case-studies/nuru.jpg')
+    }
+    .spirit-america{
+      background-image: url('/img/case-studies/service.jpg')
+    }
+    .bpeace{
+      background-image: url('/img/case-studies/integrity.jpg')
     }
   }
 }
