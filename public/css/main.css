@@ -10598,6 +10598,7 @@ section {
   background: #000;
 }
 #about .case-studies .value-description p {
+  color: #fbfbfb;
   padding: 20px;
   font-size: 14px;
   line-height: 20px;
@@ -10621,6 +10622,11 @@ section {
   padding: 40px 0;
   text-align: center;
   background-position: center -60px;
+  font-size: 18px;
+  font-family: "NHaasGroteskDSW02-Bd", sans-serif;
+  line-height: 1.4;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
 }
 @media only screen and (min-width: 650px) {
   #about .case-studies .value-title {
