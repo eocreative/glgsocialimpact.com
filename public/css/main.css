@@ -8390,8 +8390,36 @@ section {
 }
 #index .home-hero h2 {
   color: #fff;
-  font-size: 36px;
+  font-size: 26px;
   line-height: 1.6;
+}
+@media only screen and (min-width: 650px) {
+  #index .home-hero h2 {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #index .home-hero h2 {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #index .home-hero h2 {
+    font-size: 32px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #index .home-hero h2 {
+    font-size: 36px;
+  }
+}
+#index .home-hero .btn {
+  font-size: 14px;
+}
+@media only screen and (min-width: 650px) {
+  #index .home-hero .btn {
+    font-size: 18px;
+  }
 }
 #index .home-hero .btn-apply {
   background-color: #fff;
@@ -8400,6 +8428,7 @@ section {
   padding-left: 20px;
   padding-right: 20px;
   margin-right: 5px;
+  margin-bottom: 20px;
 }
 #index .home-hero .btn-learn {
   background-color: transparent;
@@ -8408,6 +8437,7 @@ section {
   padding-left: 20px;
   padding-right: 20px;
   color: #fff;
+  margin-bottom: 20px;
 }
 #index .long-dash {
   width: 30px;
