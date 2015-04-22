@@ -10008,10 +10008,9 @@ nav .container {
   width: auto !important;
 }
 nav .btn-login {
-  margin-top: 4px;
-  padding: 9px 10px 10px 10px;
+  margin-top: 2px;
+  padding: 12px 15px 10px 15px;
   margin-left: 14px;
-  background-color: transparent;
   outline: none !important;
 }
 @media only screen and (min-width: 768px) {

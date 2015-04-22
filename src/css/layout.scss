@@ -127,10 +127,9 @@ nav {
     width: auto !important;
   }
   .btn-login {
-    margin-top: 4px;
-    padding: 9px 10px 10px 10px;
+    margin-top: 2px;
+    padding: 12px 15px 10px 15px;
     margin-left: 14px;
-    background-color: transparent;
     outline: none !important;
     .hide-sm{
       @include breakp($bp-medium){
