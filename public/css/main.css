@@ -9761,9 +9761,9 @@ h3 {
 
 h4 {
   font-weight: bold;
-  color: #333;
+  color: #555;
   font-size: 22px;
-  letter-spacing: .01em;
+  letter-spacing: .02em;
   margin-bottom: .2em;
 }
 
@@ -10260,6 +10260,10 @@ section {
   width: 80%;
   max-width: 175px;
   margin: 0 auto;
+}
+#fellows .what-fellows-receive .subtitle {
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 #fellows .what-we-look-for .icon {
   max-width: 125px;
