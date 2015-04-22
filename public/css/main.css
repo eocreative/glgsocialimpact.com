@@ -10542,6 +10542,14 @@ section {
   max-height: 75px;
   margin: 0 auto;
 }
+#about .partner-about .partner-logo.endeavor {
+  position: relative;
+  top: 35px;
+}
+#about .partner-about .partner-logo.spirit-america {
+  position: relative;
+  top: 20px;
+}
 #about .case-studies {
   padding-left: 0;
   padding-right: 0;
