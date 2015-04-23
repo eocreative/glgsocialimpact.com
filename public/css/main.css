@@ -9792,6 +9792,10 @@ h5 {
   bottom: 4px;
 }
 
+p {
+  color: #5b5b5b;
+  line-height: 1.6;
+}
 p.subhead {
   color: #5b5b5b;
   font-family: "NHaasGroteskDSW02-35XLt", sans-serif;
