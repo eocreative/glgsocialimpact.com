@@ -5,7 +5,17 @@
     background-position: center top;
     @include backgroundCover();
   }
-
+  .about-social-impact{
+    .button-wrapper{
+      margin-bottom: 30px;
+    }
+    .learn-more{
+      margin-bottom: 10px;
+      @include breakp($bp-medium){
+        margin-right: 10px;
+      }
+    }
+  }
   .partner-about{
     .row{
       margin-bottom: 40px;

@@ -75,9 +75,12 @@ h1 {
 h2 {
   color: #444444;
   font-family: "NHaasGroteskDSW02-45Lt", sans-serif;
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 26px;
+  line-height: 1.6;
   margin-bottom: 0.5em;
+  @include breakp($bp-medium){
+    font-size: 32px;
+  }
 }
 
 h3 {
@@ -126,15 +129,21 @@ p {
   &.subhead {
     color: #5b5b5b;
     font-family: "NHaasGroteskDSW02-35XLt", sans-serif;
-    font-size: 22px;
-    line-height: 34px;
+    font-size: 16px;
+    line-height: 1.6;
     letter-spacing: 1px;
+    @include breakp($bp-medium){
+      font-size: 22px;
+    }
   }
   &.highlight {
     color: #5b5b5b;
     font-family: "NHaasGroteskDSW02-45Lt", sans-serif;
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 14px;
+    line-height: 1.8;
     letter-spacing: 1px;
+    @include breakp($bp-medium){
+      font-size: 16px;
+    }
   }
 }

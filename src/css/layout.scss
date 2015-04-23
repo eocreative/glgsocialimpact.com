@@ -16,6 +16,12 @@ body{
   }
 }
 
+.btn{
+  display: block;
+  @include breakp($bp-small){
+    display: inline-block;
+  }
+}
 .btn-brand{
   background-color: $brand-color;
   color: #fff !important;
@@ -27,11 +33,11 @@ body{
 
 .hero{
   display: table;
-  min-height: 250px;
   width: 100%;
   background-repeat: no-repeat !important;
   overflow: hidden;
   position: relative;
+  min-height: 250px;
   @include breakp($bp-small-plus){
     min-height: 325px;
   }
@@ -108,8 +114,12 @@ nav {
     }
   }
   .logo {
-    max-width: 275px;
-    padding: 8px;
+    max-width: 250px;
+    padding: 10px 0;
+    @include breakp($bp-small-plus){
+      max-width: 275px;
+      padding: 8px 0;
+    }
   }
   .navbar-nav li > a{
     font-size: 14px !important;
@@ -136,7 +146,8 @@ nav {
     text-transform: uppercase;
     margin-top: 2px;
     padding: 12px 15px 10px 15px;
-    margin-left: 14px;
+    margin-left: 15px;
+    margin-right: 15px;
     outline: none !important;
     .hide-sm{
       @include breakp($bp-medium){
@@ -147,78 +158,9 @@ nav {
       }
     }
   }
-  &.navbar-default {
-    background: #fff;
-    color: #000;
-    .btn-login {
-      color: #000;
-      border: 1px solid #e0e0e0;
-    }
-    .navbar-toggle {
-      border-color: rgba(0, 0, 0, 0.2);
-      .icon-bar {
-        background: rgba(0, 0, 0, 0.4);
-      }
-      &:hover nav.navbar-default .navbar-toggle:active {
-        border-color: rgba(0, 0, 0, 0.4);
-        .icon-bar {
-          background: rgba(0, 0, 0, 0.6);
-        }
-      }
-    }
-    .navbar-brand {
-      color: #000;
-      &:hover {
-        color: #000;
-      }
-    }
-    .navbar-nav li {
-      > a {
-        color: #000;
-        border-bottom: 2px solid #fff;
-        &.phone-number {
-          display: none;
-        }
-        &:hover {
-          color: #000;
-          background: transparent;
-          border-bottom: 2px solid #e0e0e0;
-          -webkit-transition: border-bottom-color 0.1s linear;
-          -moz-transition: border-bottom-color 0.1s linear;
-          -o-transition: border-bottom-color 0.1s linear;
-          transition: border-bottom-color 0.1s linear;
-        }
-      }
-      &.active > a {
-        &:hover {
-          color: #000;
-          background: transparent;
-          border-bottom: 2px solid #e0e0e0;
-          -webkit-transition: border-bottom-color 0.1s linear;
-          -moz-transition: border-bottom-color 0.1s linear;
-          -o-transition: border-bottom-color 0.1s linear;
-          transition: border-bottom-color 0.1s linear;
-        }
-        color: #000;
-        background: transparent;
-        border-bottom: 2px solid #000 !important;
-      }
-    }
-  }
   &.navbar-inverse {
     background: #000;
-    color: #fff;
     border-color: #000;
-    .btn-login {
-      color: #fff;
-      border: 1px solid #383838;
-    }
-    .navbar-brand {
-      color: #fff;
-      &:hover {
-        color: #fff;
-      }
-    }
     .navbar-nav li {
       > a {
         color: #fff;
@@ -279,7 +221,6 @@ footer {
   color: #fff;
   font-size: .9em;
   letter-spacing: 1px;
-  
   .terms{
     color: #444;
   }
@@ -292,13 +233,20 @@ footer {
   }
   .logo {
     color: #fff;
-    font-size: 75px;
+    font-size: 40px;
     line-height: 1.3em;
     i {
       line-height: 1.3em;
     }
     &:hover {
       text-decoration: none;
+    }
+    @include breakp($bp-medium){
+      margin-top: 20px;
+    }
+    @include breakp($bp-large){
+      margin-top: 0;
+      font-size: 75px;
     }
   }
   .page-links{
@@ -333,7 +281,10 @@ footer {
 }
 
 section {
-  padding: 90px 0;
+  padding: 45px 0;
+  @include breakp($bp-medium){
+    padding: 90px 0;
+  }
 }
 
 .section-light{

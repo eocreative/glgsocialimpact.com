@@ -9748,9 +9748,14 @@ h1 {
 h2 {
   color: #444444;
   font-family: "NHaasGroteskDSW02-45Lt", sans-serif;
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 26px;
+  line-height: 1.6;
   margin-bottom: 0.5em;
+}
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 32px;
+  }
 }
 
 h3 {
@@ -9799,16 +9804,26 @@ p {
 p.subhead {
   color: #5b5b5b;
   font-family: "NHaasGroteskDSW02-35XLt", sans-serif;
-  font-size: 22px;
-  line-height: 34px;
+  font-size: 16px;
+  line-height: 1.6;
   letter-spacing: 1px;
+}
+@media only screen and (min-width: 768px) {
+  p.subhead {
+    font-size: 22px;
+  }
 }
 p.highlight {
   color: #5b5b5b;
   font-family: "NHaasGroteskDSW02-45Lt", sans-serif;
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 14px;
+  line-height: 1.8;
   letter-spacing: 1px;
+}
+@media only screen and (min-width: 768px) {
+  p.highlight {
+    font-size: 16px;
+  }
 }
 
 .form-horizontal .control-group {
@@ -9893,6 +9908,15 @@ body {
     margin-right: -15px;
   }
 }
+.btn {
+  display: block;
+}
+@media only screen and (min-width: 480px) {
+  .btn {
+    display: inline-block;
+  }
+}
+
 .btn-brand {
   background-color: #eb4f53;
   color: #fff !important;
@@ -9904,11 +9928,11 @@ body {
 
 .hero {
   display: table;
-  min-height: 250px;
   width: 100%;
   background-repeat: no-repeat !important;
   overflow: hidden;
   position: relative;
+  min-height: 250px;
 }
 @media only screen and (min-width: 650px) {
   .hero {
@@ -9999,8 +10023,14 @@ nav li > a {
   display: inline-block !important;
 }
 nav .logo {
-  max-width: 275px;
-  padding: 8px;
+  max-width: 250px;
+  padding: 10px 0;
+}
+@media only screen and (min-width: 650px) {
+  nav .logo {
+    max-width: 275px;
+    padding: 8px 0;
+  }
 }
 nav .navbar-nav li > a {
   font-size: 14px !important;
@@ -10027,7 +10057,8 @@ nav .btn-login {
   text-transform: uppercase;
   margin-top: 2px;
   padding: 12px 15px 10px 15px;
-  margin-left: 14px;
+  margin-left: 15px;
+  margin-right: 15px;
   outline: none !important;
 }
 @media only screen and (min-width: 768px) {
@@ -10040,76 +10071,9 @@ nav .btn-login {
     display: inline-block;
   }
 }
-nav.navbar-default {
-  background: #fff;
-  color: #000;
-}
-nav.navbar-default .btn-login {
-  color: #000;
-  border: 1px solid #e0e0e0;
-}
-nav.navbar-default .navbar-toggle {
-  border-color: rgba(0, 0, 0, 0.2);
-}
-nav.navbar-default .navbar-toggle .icon-bar {
-  background: rgba(0, 0, 0, 0.4);
-}
-nav.navbar-default .navbar-toggle:hover nav.navbar-default .navbar-toggle:active {
-  border-color: rgba(0, 0, 0, 0.4);
-}
-nav.navbar-default .navbar-toggle:hover nav.navbar-default .navbar-toggle:active .icon-bar {
-  background: rgba(0, 0, 0, 0.6);
-}
-nav.navbar-default .navbar-brand {
-  color: #000;
-}
-nav.navbar-default .navbar-brand:hover {
-  color: #000;
-}
-nav.navbar-default .navbar-nav li > a {
-  color: #000;
-  border-bottom: 2px solid #fff;
-}
-nav.navbar-default .navbar-nav li > a.phone-number {
-  display: none;
-}
-nav.navbar-default .navbar-nav li > a:hover {
-  color: #000;
-  background: transparent;
-  border-bottom: 2px solid #e0e0e0;
-  -webkit-transition: border-bottom-color 0.1s linear;
-  -moz-transition: border-bottom-color 0.1s linear;
-  -o-transition: border-bottom-color 0.1s linear;
-  transition: border-bottom-color 0.1s linear;
-}
-nav.navbar-default .navbar-nav li.active > a {
-  color: #000;
-  background: transparent;
-  border-bottom: 2px solid #000 !important;
-}
-nav.navbar-default .navbar-nav li.active > a:hover {
-  color: #000;
-  background: transparent;
-  border-bottom: 2px solid #e0e0e0;
-  -webkit-transition: border-bottom-color 0.1s linear;
-  -moz-transition: border-bottom-color 0.1s linear;
-  -o-transition: border-bottom-color 0.1s linear;
-  transition: border-bottom-color 0.1s linear;
-}
 nav.navbar-inverse {
   background: #000;
-  color: #fff;
   border-color: #000;
-}
-nav.navbar-inverse .btn-login {
-  color: #fff;
-  border: 1px solid #383838;
-}
-nav.navbar-inverse .navbar-brand {
-  color: #fff;
-}
-nav.navbar-inverse .navbar-brand:hover {
-  color: #fff;
 }
 nav.navbar-inverse .navbar-nav li > a {
   color: #fff;
@@ -10178,7 +10142,7 @@ footer .titles {
 }
 footer .logo {
   color: #fff;
-  font-size: 75px;
+  font-size: 40px;
   line-height: 1.3em;
 }
 footer .logo i {
@@ -10186,6 +10150,17 @@ footer .logo i {
 }
 footer .logo:hover {
   text-decoration: none;
+}
+@media only screen and (min-width: 768px) {
+  footer .logo {
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  footer .logo {
+    margin-top: 0;
+    font-size: 75px;
+  }
 }
 footer .page-links a {
   color: #fff;
@@ -10214,7 +10189,12 @@ footer .social-icons i {
 }
 
 section {
-  padding: 90px 0;
+  padding: 45px 0;
+}
+@media only screen and (min-width: 768px) {
+  section {
+    padding: 90px 0;
+  }
 }
 
 .section-light {
@@ -10261,6 +10241,14 @@ section {
   line-height: 18px;
   color: #777;
 }
+#fellows .the-fellowship .apply-fellowship {
+  margin-bottom: 30px;
+}
+@media only screen and (min-width: 768px) {
+  #fellows .the-fellowship .apply-fellowship {
+    margin-bottom: 0px;
+  }
+}
 #fellows .fellow-image {
   width: 80%;
   max-width: 175px;
@@ -10270,11 +10258,19 @@ section {
   margin-top: 5px;
   margin-bottom: 10px;
 }
+#fellows .what-fellows-receive p {
+  margin-bottom: 30px;
+}
+@media only screen and (min-width: 768px) {
+  #fellows .what-fellows-receive p {
+    margin-bottom: 0px;
+  }
+}
 #fellows .what-we-look-for .icon {
   max-width: 125px;
   margin: 10px auto;
 }
-#fellows .fellow-block {
+#fellows .fellow-cards .fellow-block {
   padding: 20px;
   background-color: #fff;
   border: 1px solid #f2f2f2;
@@ -10290,65 +10286,82 @@ section {
   min-height: 305px;
 }
 @media only screen and (min-width: 480px) {
-  #fellows .fellow-block {
+  #fellows .fellow-cards .fellow-block {
     min-height: 320px;
   }
 }
 @media only screen and (min-width: 650px) {
-  #fellows .fellow-block {
+  #fellows .fellow-cards .fellow-block {
     min-height: 320px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  #fellows .fellow-block {
+  #fellows .fellow-cards .fellow-block {
     min-height: 325px;
   }
 }
-#fellows .col-md-3 {
+#fellows .fellow-cards .col-md-3 {
   padding-left: 8px;
   padding-right: 8px;
 }
-#fellows .all-star-code a {
+#fellows .fellow-cards .all-star-code a {
   color: #0078bd;
 }
-#fellows .agora a {
+#fellows .fellow-cards .agora a {
   color: #8eb947;
 }
-#fellows .stbernard a {
+#fellows .fellow-cards .stbernard a {
   color: #0055a6;
 }
-#fellows .catchafire a {
+#fellows .fellow-cards .catchafire a {
   color: #e13d25;
 }
-#fellows .crea a {
+#fellows .fellow-cards .crea a {
   color: #b03090;
 }
-#fellows .city-health-works a {
+#fellows .fellow-cards .city-health-works a {
   color: #4dc2c3;
 }
-#fellows .east-bali-cashews a {
+#fellows .fellow-cards .east-bali-cashews a {
   color: #8f6c5d;
 }
-#fellows .nuru a {
+#fellows .fellow-cards .nuru a {
   color: #f59222;
 }
-#fellows .resolution a {
+#fellows .fellow-cards .resolution a {
   color: #717275;
 }
-#fellows .samasource a {
+#fellows .fellow-cards .samasource a {
   color: #f6ce17;
 }
-#fellows .spark-mettle a {
+#fellows .fellow-cards .spark-mettle a {
   color: #e26523;
 }
-#fellows .venture-america a {
+#fellows .fellow-cards .venture-america a {
   color: #264c72;
 }
 
 .small-fellows .fellow-thumb {
   max-width: 60px;
+  margin: 10px 0;
+}
+.small-fellows .break {
+  display: block;
+}
+@media only screen and (min-width: 768px) {
+  .small-fellows .break {
+    display: inline-block;
+  }
 }
 
+.fellow-detail .hero {
+  min-height: 430px !important;
+}
+@media only screen and (min-width: 768px) {
+  .fellow-detail .hero {
+    min-height: 500px !important;
+  }
+}
 .fellow-detail .focus-area {
   color: #fff;
   display: inline-block;
@@ -10357,13 +10370,20 @@ section {
   padding: 20px;
 }
 .fellow-detail .fellow-image {
-  max-width: 175px;
+  max-width: 150px;
   margin-bottom: 15px;
 }
-.fellow-detail .fellow-about {
-  position: relative;
-  top: -145px;
-  margin-bottom: -145px;
+@media only screen and (min-width: 768px) {
+  .fellow-detail .fellow-image {
+    max-width: 175px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .fellow-detail .fellow-about {
+    position: relative;
+    top: -145px;
+    margin-bottom: -145px;
+  }
 }
 .fellow-detail .fellow-about .fellow-logo {
   max-width: 300px;
@@ -10537,6 +10557,17 @@ section {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+#about .about-social-impact .button-wrapper {
+  margin-bottom: 30px;
+}
+#about .about-social-impact .learn-more {
+  margin-bottom: 10px;
+}
+@media only screen and (min-width: 768px) {
+  #about .about-social-impact .learn-more {
+    margin-right: 10px;
+  }
 }
 #about .partner-about .row {
   margin-bottom: 40px;
@@ -10775,8 +10806,12 @@ section {
   padding-top: 13px;
   padding-left: 20px;
   padding-right: 20px;
-  margin-right: 5px;
   margin-bottom: 20px;
+}
+@media only screen and (min-width: 650px) {
+  #index .home-hero .btn-apply {
+    margin-right: 5px;
+  }
 }
 #index .home-hero .btn-learn {
   background-color: transparent;

@@ -19,6 +19,14 @@
     line-height: 18px;
     color: #777;
   }
+  .the-fellowship{
+    .apply-fellowship{
+      margin-bottom: 30px;
+      @include breakp($bp-medium){
+        margin-bottom: 0px;
+      }
+    }
+  }
   .fellow-image{
     width: 80%;
     max-width: 175px;
@@ -29,6 +37,12 @@
       margin-top: 5px;
       margin-bottom: 10px;
     }
+    p{
+      margin-bottom: 30px;
+      @include breakp($bp-medium){
+        margin-bottom: 0px;
+      }
+    }
   }
   .what-we-look-for{
     .icon{
@@ -36,75 +50,91 @@
       margin: 10px auto;
     }
   }
-  .fellow-block{
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid $grey-color;
-    margin-bottom: 20px;
-    @include  borderRadius(5px);
-    min-height: 305px;
-    @include breakp($bp-small){
-      min-height: 320px;
+  
+  .fellow-cards{
+    .fellow-block{
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid $grey-color;
+      margin-bottom: 20px;
+      @include  borderRadius(5px);
+      min-height: 305px;
+      @include breakp($bp-small){
+        min-height: 320px;
+      }
+      @include breakp($bp-small-plus){
+        min-height: 320px;
+      }
+      @include breakp($bp-xlarge){
+        min-height: 325px;
+      }
     }
-    @include breakp($bp-small-plus){
-      min-height: 320px;
+    // Adjust bootstrap margins for this section
+    .col-md-3{
+      padding-left: 8px;
+      padding-right: 8px;
     }
-    @include breakp($bp-xlarge){
-      min-height: 325px;
+    .all-star-code a{
+      color: $allstarcode;
+    }
+    .agora a{
+      color: $agora;
+    }
+    .stbernard a{
+      color: $stbernard;
+    }
+    .catchafire a{
+      color: $catchafire;
+    }
+    .crea a{
+      color: $crea;
+    }
+    .city-health-works a{
+      color: $cityhealthworks;
+    }
+    .east-bali-cashews a{
+      color: $eastbalicashews;
+    }
+    .nuru a{
+      color: $nuru;
+    }
+    .resolution a{
+      color: $resolution;
+    }
+    .samasource a{
+      color: $samasource;
+    }
+    .spark-mettle a{
+      color: $sparkmettle;
+    }
+    .venture-america a{
+      color: $ventureamerica;
     }
   }
 
-  // Adjust bootstrap margins for this section
-  .col-md-3{
-    padding-left: 8px;
-    padding-right: 8px;
-  }
-  .all-star-code a{
-    color: $allstarcode;
-  }
-  .agora a{
-    color: $agora;
-  }
-  .stbernard a{
-    color: $stbernard;
-  }
-  .catchafire a{
-    color: $catchafire;
-  }
-  .crea a{
-    color: $crea;
-  }
-  .city-health-works a{
-    color: $cityhealthworks;
-  }
-  .east-bali-cashews a{
-    color: $eastbalicashews;
-  }
-  .nuru a{
-    color: $nuru;
-  }
-  .resolution a{
-    color: $resolution;
-  }
-  .samasource a{
-    color: $samasource;
-  }
-  .spark-mettle a{
-    color: $sparkmettle;
-  }
-  .venture-america a{
-    color: $ventureamerica;
-  }
-    
 }
 
 .small-fellows{
   .fellow-thumb{
     max-width: 60px;
+    margin: 10px 0;
+  }
+  .break{
+    display: block;
+    @include breakp($bp-medium){
+      display: inline-block;
+    }
   }
 }
 
 .fellow-detail{
+
+  .hero{
+    min-height: 430px !important;
+    @include breakp($bp-medium){
+      min-height: 500px !important;
+    }
+  }
   .focus-area{
     color: #fff;
     display: inline-block;
@@ -114,14 +144,19 @@
   }
 
   .fellow-image{
-    max-width: 175px;
+    max-width: 150px;
     margin-bottom: 15px;
+    @include breakp($bp-medium){
+      max-width: 175px;
+    }
   }
 
   .fellow-about{
-    position: relative;
-    top: -145px;
-    margin-bottom: -145px;
+    @include breakp($bp-medium){
+      position: relative;
+      top: -145px;
+      margin-bottom: -145px;
+    }
     .fellow-logo{
       max-width: 300px;
       margin-top: 40px;
