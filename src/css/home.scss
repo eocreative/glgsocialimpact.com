@@ -22,9 +22,11 @@
   }
   .partner-section{
     .partner-logo{
-      max-width: 200px;
-      max-height: 200px;
       margin: 20px auto;
+      @include breakp($bp-small-plus){
+        max-width: 200px;
+        max-height: 200px;
+      }
       &.square-logo{
         max-height: 70px;
       }
@@ -36,7 +38,10 @@
       }
     }
     .learn-more{
-      margin-top: 15px;
+      margin: 15px 0 30px;
+      @include breakp($bp-small-plus){
+        margin: 15px 0 0;
+      }
     }
   }
   .home-hero{
@@ -94,51 +99,60 @@
     }
     
   }
-  .long-dash{
-    width: 30px;
-    height: 1px;
-    border-bottom: 1px solid #999;
-    margin: 28px auto 40px;
+  .meet-the-fellows{
+    .learn-more{
+      margin-bottom: 30px;
+      @include breakp($bp-small-plus){
+        margin-bottom: 0;
+      }
+    }
   }
   .quote-section{
+    .bxslider{
+      padding: 0;
+      li{
+        width: auto !important;
+      }
+      .quote {
+        font-family: $medium-light-font;
+        color: #777;
+        font-size: 26px;
+      }
+      .quote-name {
+        font-family: $medium-light-font;
+        font-size: 16px;
+        line-height: 20px;
+        color: #777;
+        letter-spacing: 1.5px;
+      }
+    }
+    .bx-viewport {
+      -moz-box-shadow: none !important;
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important;
+      min-height: 170px;
+      background: transparent;
+      border: 0px solid transparent;
+    }
     h2{
       color: #444;
     }
-  }
-  .quote-wrapper{
-    height: 100px;
-    overflow: hidden;
-    .quote-mark{
-      font-size: 200px;
-      line-height: 205px;
-      color: $brand-color;
+    .long-dash{
+      width: 30px;
+      height: 1px;
+      border-bottom: 1px solid #999;
+      margin: 28px auto 40px;
+    }
+    .quote-wrapper{
+      height: 100px;
+      overflow: hidden;
+      .quote-mark{
+        font-size: 200px;
+        line-height: 205px;
+        color: $brand-color;
+      }
     }
   }
-  .bxslider{
-    padding: 0;
-    li{
-      width: auto !important;
-    }
-    .quote {
-      font-family: $medium-light-font;
-      color: #777;
-      font-size: 26px;
-    }
-    .quote-name {
-      font-family: $medium-light-font;
-      font-size: 16px;
-      line-height: 20px;
-      color: #777;
-      letter-spacing: 1.5px;
-    }
-  }
-  .bx-viewport {
-    -moz-box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    min-height: 170px;
-    background: transparent;
-    border: 0px solid transparent;
-  }
+
 
 }

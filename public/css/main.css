@@ -9882,16 +9882,17 @@ body {
   margin-top: 70px;
 }
 
-.row {
-  margin-left: 0;
-  margin-right: 0;
-}
+@media only screen and (min-width: 650px) {
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
 
-.container .row {
-  margin-left: -15px;
-  margin-right: -15px;
+  .container .row {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
 }
-
 .btn-brand {
   background-color: #eb4f53;
   color: #fff !important;
@@ -10699,9 +10700,13 @@ section {
   background-position: top center;
 }
 #index .partner-section .partner-logo {
-  max-width: 200px;
-  max-height: 200px;
   margin: 20px auto;
+}
+@media only screen and (min-width: 650px) {
+  #index .partner-section .partner-logo {
+    max-width: 200px;
+    max-height: 200px;
+  }
 }
 #index .partner-section .partner-logo.square-logo {
   max-height: 70px;
@@ -10713,7 +10718,12 @@ section {
   margin-top: 30px;
 }
 #index .partner-section .learn-more {
-  margin-top: 15px;
+  margin: 15px 0 30px;
+}
+@media only screen and (min-width: 650px) {
+  #index .partner-section .learn-more {
+    margin: 15px 0 0;
+  }
 }
 #index .home-hero {
   background-position: center top;
@@ -10777,49 +10787,57 @@ section {
   color: #fff;
   margin-bottom: 20px;
 }
-#index .long-dash {
-  width: 30px;
-  height: 1px;
-  border-bottom: 1px solid #999;
-  margin: 28px auto 40px;
+#index .meet-the-fellows .learn-more {
+  margin-bottom: 30px;
 }
-#index .quote-section h2 {
-  color: #444;
+@media only screen and (min-width: 650px) {
+  #index .meet-the-fellows .learn-more {
+    margin-bottom: 0;
+  }
 }
-#index .quote-wrapper {
-  height: 100px;
-  overflow: hidden;
-}
-#index .quote-wrapper .quote-mark {
-  font-size: 200px;
-  line-height: 205px;
-  color: #eb4f53;
-}
-#index .bxslider {
+#index .quote-section .bxslider {
   padding: 0;
 }
-#index .bxslider li {
+#index .quote-section .bxslider li {
   width: auto !important;
 }
-#index .bxslider .quote {
+#index .quote-section .bxslider .quote {
   font-family: "NHaasGroteskDSW02-35XLt", sans-serif;
   color: #777;
   font-size: 26px;
 }
-#index .bxslider .quote-name {
+#index .quote-section .bxslider .quote-name {
   font-family: "NHaasGroteskDSW02-35XLt", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #777;
   letter-spacing: 1.5px;
 }
-#index .bx-viewport {
+#index .quote-section .bx-viewport {
   -moz-box-shadow: none !important;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
   min-height: 170px;
   background: transparent;
   border: 0px solid transparent;
+}
+#index .quote-section h2 {
+  color: #444;
+}
+#index .quote-section .long-dash {
+  width: 30px;
+  height: 1px;
+  border-bottom: 1px solid #999;
+  margin: 28px auto 40px;
+}
+#index .quote-section .quote-wrapper {
+  height: 100px;
+  overflow: hidden;
+}
+#index .quote-section .quote-wrapper .quote-mark {
+  font-size: 200px;
+  line-height: 205px;
+  color: #eb4f53;
 }
 
 .blog-iframe {
