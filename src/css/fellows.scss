@@ -49,7 +49,32 @@
       max-width: 125px;
       margin: 10px auto;
     }
+    ul {
+      list-style: none;
+      padding:0;
+      margin:0;
+    }
+
+    li { 
+      padding-left: 1em; 
+      text-indent: -1.1em;
+      color: #5b5b5b;
+      font-family: "NHaasGroteskDSW02-45Lt", sans-serif;
+      font-size: 14px;
+      line-height: 1.8;
+      letter-spacing: 1px;
+      @include breakp($bp-medium){
+        font-size: 16px;
+      }
+    }
+
+    li:before {
+        content: "\002022";
+        color: $brand-color;
+        padding-right: .75em;
+    }
   }
+
   
   .fellow-cards{
     .fellow-block{

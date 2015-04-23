@@ -10270,6 +10270,30 @@ section {
   max-width: 125px;
   margin: 10px auto;
 }
+#fellows .what-we-look-for ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#fellows .what-we-look-for li {
+  padding-left: 1em;
+  text-indent: -1.1em;
+  color: #5b5b5b;
+  font-family: "NHaasGroteskDSW02-45Lt", sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: 1px;
+}
+@media only screen and (min-width: 768px) {
+  #fellows .what-we-look-for li {
+    font-size: 16px;
+  }
+}
+#fellows .what-we-look-for li:before {
+  content: "\002022";
+  color: #eb4f53;
+  padding-right: .75em;
+}
 #fellows .fellow-cards .fellow-block {
   padding: 20px;
   background-color: #fff;
