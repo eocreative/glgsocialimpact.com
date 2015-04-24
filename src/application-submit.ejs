@@ -26,43 +26,46 @@
 
     <body>
     <%- include partials/header.ejs %>
-   <div class="main">
-    <div class="jumbotron jumbo-primary jumbo-first">
+
+    <section>
       <div class="container">
-        <h1>GLG Impact Fellows - Membership Application</h1>
-      </div>
-    </div>
-    <div class="jumbotron dark">
-      <div class="container">
-
-       <!-- Hidden, shown if form succeeds -->
-
-       <div id="form-success" class="col-md-12">
-         <div class="panel panel-default">
-           <div class="panel-heading">Application Submitted</div>
-           <div class="panel-body">Thank you, your application has been submitted to GLG Social Impact.</div>
-         </div>
-       </div>
-       <!-- Hidden, shown if form fails -->
-       <div id="form-fail" class="col-md-12">
-        <div class="panel panel-default">
-          <div class="panel-heading">Application Submission Failed</div>
-          <div class="panel-body">Sorry, but your application failed to be submitted. We apologize for the inconvenience. Please click the back button in your browser, or click try again.</div>
+        <div class="row">
+          <div class="col-sm-8 col-centered">
+            <h1 class="text-center">GLG Impact Fellows - Membership Application</h1>
+          </div>
         </div>
-        <div class="callout">
-          <a class="btn btn-primary btn-lg red" id="try-again-button">TRY AGAIN</a>
+        <br>
+        <div class="row">
+          <div class="col-sm-7 col-centered">
+            <!-- Hidden, shown if form succeeds -->
+            <div id="form-success" class="col-md-12">
+             <div class="panel panel-default">
+               <div class="panel-heading">Application Submitted</div>
+               <div class="panel-body">Thank you, your application has been submitted to GLG Social Impact.</div>
+             </div>
+            </div>
+
+            <!-- Hidden, shown if form fails -->
+            <div id="form-fail" class="col-md-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">Application Submission Failed</div>
+                <div class="panel-body">
+                  Sorry, but your application failed to be submitted. We apologize for the inconvenience. Please click the back button in your browser, or click try again.
+                  <br>
+                  <br>
+                  <a class="btn btn-primary btn-md red" id="try-again-button">Try Again</a>
+                </div>
+
+              </div>
+              
+            </div>
+          </div>
         </div>
       </div>
-
-      <!-- end hidden status -->
-
-
-    </div>
-  </div>
-</div>
+    </section>
 
 
-<%- include partials/footer.ejs %>
+    <%- include partials/footer.ejs %>
 
 
     <!-- Bootstrap core JavaScript
