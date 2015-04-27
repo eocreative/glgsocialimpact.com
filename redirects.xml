@@ -1,8 +1,51 @@
 <?xml version="1.0"?>
 <RoutingRules>
-<RoutingRule><Condition><KeyPrefixEquals>application.html</KeyPrefixEquals></Condition><Redirect><ReplaceKeyPrefixWith>/application/</ReplaceKeyPrefixWith></Redirect></RoutingRule>
-<RoutingRule><Condition><KeyPrefixEquals>partners.html</KeyPrefixEquals></Condition><Redirect><ReplaceKeyPrefixWith>/partners/</ReplaceKeyPrefixWith></Redirect></RoutingRule>
-<RoutingRule><Condition><KeyPrefixEquals>blog.html</KeyPrefixEquals></Condition><Redirect><ReplaceKeyPrefixWith>/blog/</ReplaceKeyPrefixWith></Redirect></RoutingRule>
-<RoutingRule><Condition><KeyPrefixEquals>usage_policy.html</KeyPrefixEquals></Condition><Redirect><ReplaceKeyPrefixWith>/usage/policy/</ReplaceKeyPrefixWith></Redirect></RoutingRule>
-<RoutingRule><Condition><KeyPrefixEquals>fellows.html</KeyPrefixEquals></Condition><Redirect><ReplaceKeyPrefixWith>/fellows/</ReplaceKeyPrefixWith></Redirect></RoutingRule>
+    <RoutingRule>
+        <Condition>
+            <KeyPrefixEquals>about.html</KeyPrefixEquals>
+        </Condition>
+        <Redirect>
+            <ReplaceKeyPrefixWith>/about/</ReplaceKeyPrefixWith>
+        </Redirect>
+    </RoutingRule>
+    <RoutingRule>
+        <Condition>
+            <KeyPrefixEquals>application.html</KeyPrefixEquals>
+        </Condition>
+        <Redirect>
+            <ReplaceKeyPrefixWith>/application/</ReplaceKeyPrefixWith>
+        </Redirect>
+    </RoutingRule>
+    <RoutingRule>
+        <Condition>
+            <KeyPrefixEquals>partners.html</KeyPrefixEquals>
+        </Condition>
+        <Redirect>
+            <ReplaceKeyPrefixWith>/about/</ReplaceKeyPrefixWith>
+        </Redirect>
+    </RoutingRule>
+    <RoutingRule>
+        <Condition>
+            <KeyPrefixEquals>blog.html</KeyPrefixEquals>
+        </Condition>
+        <Redirect>
+            <ReplaceKeyPrefixWith>/blog/</ReplaceKeyPrefixWith>
+        </Redirect>
+    </RoutingRule>
+    <RoutingRule>
+        <Condition>
+            <KeyPrefixEquals>usage_policy.html</KeyPrefixEquals>
+        </Condition>
+        <Redirect>
+            <ReplaceKeyPrefixWith>/usage/policy/</ReplaceKeyPrefixWith>
+        </Redirect>
+    </RoutingRule>
+    <RoutingRule>
+        <Condition>
+            <KeyPrefixEquals>fellows.html</KeyPrefixEquals>
+        </Condition>
+        <Redirect>
+            <ReplaceKeyPrefixWith>/fellows/</ReplaceKeyPrefixWith>
+        </Redirect>
+    </RoutingRule>
 </RoutingRules>
