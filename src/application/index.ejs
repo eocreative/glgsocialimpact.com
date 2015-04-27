@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apply to be a GLG Social Impact Fellow. GLG (Gerson Lehrman Group) supports nonprofits and their leaders.">
+  <link rel="shortcut icon" href="/ico/favicon.png">
+
+  <title>Application | GLG Social Impact</title>
+
+  <!-- Custom styles for this template -->
+  <link href="/css/main.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="application">
+  <%- include ../partials/header.ejs %>
+  <section class="section-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7 col-centered text-center">
+          <h2>GLG Social Impact - Fellowship Application</h2>
+          <p class="subhead">
+            Applications will be accepted on a rolling basis until July 15th, 2015.  We will follow up with qualified candidates to schedule interviews and collect further information during the selection process. <a href="/contact/">Contact us</a> if you have any questions.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-7 col-centered text-center">
+
+        </div>
+      </div>
+      <br>
+      <br>
+
+      <div class="row">
+        <div class="col-sm-6 col-centered">
+
+          <form action="//services.glgresearch.com/form-mailer/socialimpact_application" method="post" role="form" class="form-horizontal application-form">
+            <fieldset>
+
+              <div class="control-group clearfix">
+                <label class="control-label section-title">About You</label>
+                <div class="controls">
+                </div>
+              </div>
+              <div class="control-group clearfix">
+                <label for="name" class="control-label">Name</label>
+                <div class="controls">
+                  <input type="text" class="form-control" required="true" name="name" id="name">
+                </div>
+              </div>
+              <div class="control-group clearfix">
+                <label for="title" class="control-label">Title</label>
+                <div class="controls">
+                  <input type="text" class="form-control" required="true" name="title" id="title">
+                </div>
+              </div>
+              <div class="control-group clearfix">
+                <label for="contact_email" class="control-label">Email Address</label>
+                <div class="controls">
+                  <input type="email" class="form-control" required="true" name="contact_email" id="contact_email">
+                </div>
+              </div>
+              <div class="control-group clearfix">
+                <label for="contact_phone" class="control-label">Phone</label>
+                <div class="controls">
+                  <input type="tel" class="form-control" required="true" name="contact_phone" id="contact_phone">
+                </div>
+              </div>
+              <div class="control-group clearfix">
+                <label for="contact_timespent" class="control-label">What are the 3 issues/projects on which you spend most of your time as CEO?<span class="word-count">(100 words)</span></label>
+                <div class="controls">
+                  <textarea required="true" name="contact_timespent" id="contact_timespent" class="form-control" rows="3" maxlength="150" ></textarea>
+                </div>
+              </div>
+              <br>
+              <hr>
+              <br>
+              <div class="control-group clearfix">
+                <label class="control-label section-title">Your Organization</label>
+                <div class="controls">
+                </div>
+              </div>
+              <div class="control-group clearfix">
+                <label for="organization_name" class="control-label">Organization Name</label>
+                <div class="controls">
+                  <input type="text" class="form-control" required="true" name="organization_name" id="organization_name">
+                </div>
+              </div>
+
+              <div class="control-group clearfix">
+                <label for="organization_website" class="control-label">Website</label>
+                <div class="controls">
+                  <input type="text" class="form-control" required="true" name="organization_website" id="organization_website">
+                </div>
+              </div>
+
+              <div class="control-group clearfix">
+                <label for="org_mission" class="control-label">Mission/Vision</label>
+                <div class="controls">
+                  <textarea required="true" name="org_mission" id="org_mission" class="form-control" rows="3" maxlength="1000" ></textarea>
+                </div>
+              </div>
+
+              <div class="control-group clearfix">
+                <label for="org_ambitions" class="control-label">Briefly describe your ambitions for the organization over the next three years. <span class="word-count">(250 words)</span></label>
+                <div class="controls">
+                  <textarea required="true" name="org_ambitions" id="org_ambitions" class="form-control" rows="3" maxlength="300" ></textarea>
+                </div>
+              </div>
+              <div class="control-group clearfix">
+                <label for="org_theory" class="control-label">Describe your theory of change and your approach. How is it innovative? <span class="word-count">(250 words)</span></label>
+                <div class="controls">
+                  <textarea required="true" name="org_theory" id="org_theory" class="form-control" rows="2" maxlength="300"></textarea>
+                </div>
+              </div>
+              <div class="control-group clearfix">
+                <label for="org_challenges" class="control-label">What are the 3 most important questions / challenges to achieve breakthrough impact and grow? <span class="word-count">(100 words each)</span></label>
+                <div class="controls">
+                  <textarea required="true" name="org_challenges_1" id="org_challenges_1" class="form-control" rows="2" maxlength="150"></textarea>
+                </div>
+                <br>
+                <div class="controls">
+                  <textarea required="true" name="org_challenges_2" id="org_challenges_2" class="form-control" rows="2" maxlength="150"></textarea>
+                </div>
+                <br>
+                <div class="controls">
+                  <textarea required="true" name="org_challenges_3" id="org_challenges_3" class="form-control" rows="2" maxlength="150"></textarea>
+                </div>
+              </div>
+              <br>
+              <br>
+              <button type="submit" class="btn btn-brand btn-lg apply-button">Submit Application</button>
+
+            </fieldset>
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+<%- include ../partials/footer.ejs %>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

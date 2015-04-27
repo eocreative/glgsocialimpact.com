@@ -41,7 +41,7 @@ module.exports = function(grunt) {
     ejs: {
       all: {
         cwd: 'src',
-        src: ['*.ejs', 'fellows/*.ejs', '!partials/**/*'],
+        src: ['*.ejs', '*/*.ejs', '*/*/*.ejs', '!partials/**/*'],
         dest: 'public/',
         expand: true,
         ext: '.html'
@@ -64,7 +64,7 @@ module.exports = function(grunt) {
     },
     watch: {
       scripts: {
-        files: ['src/*.ejs','src/fellows/*.ejs', 'src/partials/*.ejs'],
+        files: ['src/*.ejs','src/*/*.ejs','src/fellows/*/*.ejs', 'src/partials/*.ejs'],
         tasks: ['ejs'],
         options: {
           livereload: true
