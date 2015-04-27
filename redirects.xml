@@ -1,11 +1,10 @@
-<?xml version="1.0"?>
 <RoutingRules>
     <RoutingRule>
         <Condition>
             <KeyPrefixEquals>about.html</KeyPrefixEquals>
         </Condition>
         <Redirect>
-            <ReplaceKeyPrefixWith>/about/</ReplaceKeyPrefixWith>
+            <ReplaceKeyPrefixWith>about/</ReplaceKeyPrefixWith>
         </Redirect>
     </RoutingRule>
     <RoutingRule>
@@ -13,7 +12,7 @@
             <KeyPrefixEquals>application.html</KeyPrefixEquals>
         </Condition>
         <Redirect>
-            <ReplaceKeyPrefixWith>/application/</ReplaceKeyPrefixWith>
+            <ReplaceKeyPrefixWith>application/</ReplaceKeyPrefixWith>
         </Redirect>
     </RoutingRule>
     <RoutingRule>
@@ -21,7 +20,7 @@
             <KeyPrefixEquals>partners.html</KeyPrefixEquals>
         </Condition>
         <Redirect>
-            <ReplaceKeyPrefixWith>/about/</ReplaceKeyPrefixWith>
+            <ReplaceKeyPrefixWith>about/</ReplaceKeyPrefixWith>
         </Redirect>
     </RoutingRule>
     <RoutingRule>
@@ -29,7 +28,7 @@
             <KeyPrefixEquals>blog.html</KeyPrefixEquals>
         </Condition>
         <Redirect>
-            <ReplaceKeyPrefixWith>/blog/</ReplaceKeyPrefixWith>
+            <ReplaceKeyPrefixWith>blog/</ReplaceKeyPrefixWith>
         </Redirect>
     </RoutingRule>
     <RoutingRule>
@@ -37,7 +36,7 @@
             <KeyPrefixEquals>usage_policy.html</KeyPrefixEquals>
         </Condition>
         <Redirect>
-            <ReplaceKeyPrefixWith>/usage/policy/</ReplaceKeyPrefixWith>
+            <ReplaceKeyPrefixWith>usage/policy/</ReplaceKeyPrefixWith>
         </Redirect>
     </RoutingRule>
     <RoutingRule>
@@ -45,7 +44,7 @@
             <KeyPrefixEquals>fellows.html</KeyPrefixEquals>
         </Condition>
         <Redirect>
-            <ReplaceKeyPrefixWith>/fellows/</ReplaceKeyPrefixWith>
+            <ReplaceKeyPrefixWith>fellows/</ReplaceKeyPrefixWith>
         </Redirect>
     </RoutingRule>
 </RoutingRules>
