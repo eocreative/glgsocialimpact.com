@@ -114,8 +114,8 @@ nav {
     }
   }
   .logo {
-    max-width: 250px;
-    padding: 10px 0;
+    max-width: 225px;
+    padding: 12px 0;
     @include breakp($bp-small-plus){
       max-width: 275px;
       padding: 8px 0;
@@ -158,6 +158,9 @@ nav {
       }
     }
   }
+  .navbar-toggle{
+    margin-right: 0;
+  }
   &.navbar-inverse {
     background: #000;
     border-color: #000;
@@ -177,17 +180,6 @@ nav {
           color: #fff;
         }
       }
-    }
-    .dropdown-toggle, &.open a, .dropdown-toggle a:active {
-      color: #fff !important;
-      background: transparent !important;
-    }
-    .dropdown-menu {
-      margin-top: 6px;
-      color: #fff;
-      background: #000;
-      border: 1px solid #383838;
-      border-radius: 4px;
     }
     .navbar-nav li {
       > a {

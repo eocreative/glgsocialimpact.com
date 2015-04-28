@@ -10023,8 +10023,8 @@ nav li > a {
   display: inline-block !important;
 }
 nav .logo {
-  max-width: 250px;
-  padding: 10px 0;
+  max-width: 225px;
+  padding: 12px 0;
 }
 @media only screen and (min-width: 650px) {
   nav .logo {
@@ -10071,6 +10071,9 @@ nav .btn-login {
     display: inline-block;
   }
 }
+nav .navbar-toggle {
+  margin-right: 0;
+}
 nav.navbar-inverse {
   background: #000;
   border-color: #000;
@@ -10089,17 +10092,6 @@ nav.navbar-inverse .navbar-nav li.active > a {
 }
 nav.navbar-inverse .navbar-nav li.active > a:hover {
   color: #fff;
-}
-nav.navbar-inverse .dropdown-toggle, nav.navbar-inverse.open a, nav.navbar-inverse .dropdown-toggle a:active {
-  color: #fff !important;
-  background: transparent !important;
-}
-nav.navbar-inverse .dropdown-menu {
-  margin-top: 6px;
-  color: #fff;
-  background: #000;
-  border: 1px solid #383838;
-  border-radius: 4px;
 }
 nav.navbar-inverse .navbar-nav li > a {
   color: #fff;
