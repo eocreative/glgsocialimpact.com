@@ -5,6 +5,7 @@
         </Condition>
         <Redirect>
             <ReplaceKeyPrefixWith>about/</ReplaceKeyPrefixWith>
+            <HostName>glgsocialimpact.com</HostName>
         </Redirect>
     </RoutingRule>
     <RoutingRule>
@@ -13,6 +14,7 @@
         </Condition>
         <Redirect>
             <ReplaceKeyPrefixWith>application/</ReplaceKeyPrefixWith>
+            <HostName>glgsocialimpact.com</HostName>
         </Redirect>
     </RoutingRule>
     <RoutingRule>
@@ -21,6 +23,7 @@
         </Condition>
         <Redirect>
             <ReplaceKeyPrefixWith>about/</ReplaceKeyPrefixWith>
+            <HostName>glgsocialimpact.com</HostName>
         </Redirect>
     </RoutingRule>
     <RoutingRule>
@@ -29,6 +32,7 @@
         </Condition>
         <Redirect>
             <ReplaceKeyPrefixWith>blog/</ReplaceKeyPrefixWith>
+            <HostName>glgsocialimpact.com</HostName>
         </Redirect>
     </RoutingRule>
     <RoutingRule>
@@ -37,6 +41,7 @@
         </Condition>
         <Redirect>
             <ReplaceKeyPrefixWith>usage/policy/</ReplaceKeyPrefixWith>
+            <HostName>glgsocialimpact.com</HostName>
         </Redirect>
     </RoutingRule>
     <RoutingRule>
@@ -45,6 +50,7 @@
         </Condition>
         <Redirect>
             <ReplaceKeyPrefixWith>fellows/</ReplaceKeyPrefixWith>
+            <HostName>glgsocialimpact.com</HostName>
         </Redirect>
     </RoutingRule>
 </RoutingRules>
