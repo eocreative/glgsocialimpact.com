@@ -1,10 +1,19 @@
 <RoutingRules>
     <RoutingRule>
         <Condition>
+            <KeyPrefixEquals>/</KeyPrefixEquals>
+        </Condition>
+        <Redirect>
+            <ReplaceKeyPrefixWith></ReplaceKeyPrefixWith>
+            <HostName>glgsocialimpact.com</HostName>
+        </Redirect>
+    </RoutingRule>
+    <RoutingRule>
+        <Condition>
             <KeyPrefixEquals>about.html</KeyPrefixEquals>
         </Condition>
         <Redirect>
-            <ReplaceKeyPrefixWith>about/</ReplaceKeyPrefixWith>
+            <ReplaceKeyWith>about/</ReplaceKeyWith>
             <HostName>glgsocialimpact.com</HostName>
         </Redirect>
     </RoutingRule>
@@ -13,7 +22,7 @@
             <KeyPrefixEquals>application.html</KeyPrefixEquals>
         </Condition>
         <Redirect>
-            <ReplaceKeyPrefixWith>application/</ReplaceKeyPrefixWith>
+            <ReplaceKeyWith>application/</ReplaceKeyWith>
             <HostName>glgsocialimpact.com</HostName>
         </Redirect>
     </RoutingRule>
@@ -22,7 +31,7 @@
             <KeyPrefixEquals>partners.html</KeyPrefixEquals>
         </Condition>
         <Redirect>
-            <ReplaceKeyPrefixWith>about/</ReplaceKeyPrefixWith>
+            <ReplaceKeyWith>about/</ReplaceKeyWith>
             <HostName>glgsocialimpact.com</HostName>
         </Redirect>
     </RoutingRule>
@@ -31,7 +40,7 @@
             <KeyPrefixEquals>blog.html</KeyPrefixEquals>
         </Condition>
         <Redirect>
-            <ReplaceKeyPrefixWith>blog/</ReplaceKeyPrefixWith>
+            <ReplaceKeyWith>blog/</ReplaceKeyWith>
             <HostName>glgsocialimpact.com</HostName>
         </Redirect>
     </RoutingRule>
@@ -40,7 +49,7 @@
             <KeyPrefixEquals>usage_policy.html</KeyPrefixEquals>
         </Condition>
         <Redirect>
-            <ReplaceKeyPrefixWith>usage/policy/</ReplaceKeyPrefixWith>
+            <ReplaceKeyWith>usage/policy/</ReplaceKeyWith>
             <HostName>glgsocialimpact.com</HostName>
         </Redirect>
     </RoutingRule>
@@ -49,7 +58,7 @@
             <KeyPrefixEquals>fellows.html</KeyPrefixEquals>
         </Condition>
         <Redirect>
-            <ReplaceKeyPrefixWith>fellows/</ReplaceKeyPrefixWith>
+            <ReplaceKeyWith>fellows/</ReplaceKeyWith>
             <HostName>glgsocialimpact.com</HostName>
         </Redirect>
     </RoutingRule>
